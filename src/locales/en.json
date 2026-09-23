@@ -1,0 +1,161 @@
+{
+  "navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "contact": "Contact",
+    "menu": "Menu",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "cart": "View cart"
+  },
+  "footer": {
+    "copyright": "© Skevos. Elegant marble utensils, made in Greece.",
+    "instagram": "Instagram",
+    "pinterest": "Pinterest"
+  },
+  "home": {
+    "eyebrow": "Handcut Greek Marble",
+    "heroTitleLine1": "Timeless marble,",
+    "heroTitleLine2": "crafted for",
+    "heroTitleLine3": "the home.",
+    "heroDesc": "Marble furniture and objects carved from solid Greek stone — one material, fourteen natural finishes, no two pieces quite alike.",
+    "shopCollection": "Shop the collection",
+    "ourStory": "Our story",
+    "introEyebrow": "One material, many forms",
+    "introTitle": "Every stone tells a different story",
+    "introDesc": "From warm travertino to deep forest green, each piece is cut from natural marble — veining and tone vary piece to piece.",
+    "storyEyebrow": "From quarry to craft",
+    "storyTitle": "Cut, shaped and polished in Greece",
+    "storyLink": "Read our story →",
+    "wholesaleTitle": "Buying for a hotel, restaurant or store?",
+    "wholesaleDesc": "We work with trade partners across sizes — ask about wholesale pricing and lead times.",
+    "wholesaleBtn": "Wholesale inquiries"
+  },
+  "products": {
+    "eyebrow": "The collection",
+    "title": "Our Products",
+    "desc": "Solid Greek marble, offered across a range of natural finishes. Prices on request — retail and trade.",
+    "priceOnRequest": "Price on request",
+    "addToCart": "Add to cart",
+    "categories": {
+      "All": "All",
+      "Kitchen": "Kitchen"
+    }
+  },
+  "product": {
+    "breadcrumbProducts": "Products",
+    "chooseAFinish": "Choose a finish",
+    "otherFinishes": "Other finishes",
+    "requestPricing": "Request pricing",
+    "askAboutWholesale": "Ask about wholesale",
+    "addToCart": "Add to cart",
+    "addedToCart": "Added",
+    "specs": {
+      "materialLabel": "Material",
+      "materialValue": "Natural marble / travertino",
+      "finishLabel": "Finish",
+      "finishValue": "Polished, food-safe sealant",
+      "careLabel": "Care",
+      "careValue": "Hand wash, dry immediately",
+      "originLabel": "Origin",
+      "originValue": "Made in Greece"
+    }
+  },
+  "about": {
+    "heroTitle": "Our Story",
+    "bodyEyebrow": "Skevos — from the Greek for “vessel”",
+    "bodyText1": "Skevos began with a simple idea: everyday kitchen objects deserve the same material honesty as fine furniture. We work directly with Greek marble and travertino, letting each stone's natural veining and colour define the finished piece.",
+    "bodyText2": "Every spoon rest is cut, shaped and polished by hand. Because the material is natural, no two pieces are identical — the marks and tones you see are the stone's, not ours.",
+    "bodyText3": "We keep the range narrow and the quality high: one considered form, offered across the widest range of stone colour we can responsibly source.",
+    "processTitle": "How each piece is made",
+    "steps": {
+      "quarried": {
+        "title": "Quarried",
+        "desc": "Blocks are selected by hand for colour and veining before they ever reach the workshop."
+      },
+      "shaped": {
+        "title": "Shaped",
+        "desc": "Each rest is cut and hollowed to its basin form, then refined by hand."
+      },
+      "polished": {
+        "title": "Polished",
+        "desc": "A food-safe sealant is applied and the surface polished to its final finish."
+      }
+    }
+  },
+  "contact": {
+    "eyebrow": "Get in touch",
+    "title": "Contact & Wholesale",
+    "desc": "Retail questions, wholesale pricing, press — we read every message.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jane@email.com",
+    "reasonLabel": "I'm inquiring about",
+    "reasons": {
+      "Retail": "Retail",
+      "Wholesale": "Wholesale",
+      "Press": "Press"
+    },
+    "messageLabel": "Message",
+    "messagePlaceholder": "Tell us what you're looking for...",
+    "sendMessage": "Send message",
+    "sentConfirmation": "Thank you — we'll be in touch",
+    "panelTitle": "Reach us directly",
+    "panelEmailLabel": "Email",
+    "panelEmailValue": "hello@skevosmarble.com",
+    "panelWorkshopLabel": "Workshop",
+    "panelWorkshopValue": "Greece",
+    "panelWholesaleLabel": "Wholesale",
+    "panelWholesaleDesc": "Minimum order quantities and lead times available on request. Samples can be arranged for trade buyers."
+  },
+  "cart": {
+    "title": "Your Cart",
+    "itemsHeading": "Items",
+    "empty": "Your cart is empty.",
+    "emptyDesc": "Browse the collection and add a finish to request an offer.",
+    "browseProducts": "Browse products",
+    "remove": "Remove",
+    "quantity": "Qty",
+    "requestOffer": "Request an offer",
+    "backToCart": "Back to cart",
+    "quoteFormTitle": "Request a quote",
+    "quoteFormDesc": "Send us your details and we'll get back to you with pricing for the items below.",
+    "nameLabel": "Name",
+    "namePlaceholder": "Jane Doe",
+    "emailLabel": "Email",
+    "emailPlaceholder": "jane@email.com",
+    "phoneLabel": "Phone (optional)",
+    "phonePlaceholder": "+30 ...",
+    "submit": "Send request",
+    "sending": "Sending...",
+    "success": "Thank you — your request has been sent. We'll be in touch soon.",
+    "error": "Something went wrong sending your request. Please try again or email us directly.",
+    "close": "Close cart"
+  },
+  "catalog": {
+    "products": {
+      "spoon-rest": {
+        "name": "Spoon Rest",
+        "description": "Solid natural marble, hand-finished with a gently sloped basin. Veining, tone and translucency vary by slab — the piece you receive is one of a kind."
+      }
+    },
+    "finishes": {
+      "travertino-classic": "Travertino Classic",
+      "travertino-choco": "Travertino Choco",
+      "green": "Green",
+      "red": "Red",
+      "perla": "Perla",
+      "nero-greco": "Nero Greco",
+      "salomi": "Salomi",
+      "semi-white": "Semi White",
+      "rodiths": "Rodiths",
+      "maroko-sand": "Maroko Sand",
+      "maroko-stoned": "Maroko Stoned",
+      "delino": "Delino",
+      "foume": "Foume",
+      "white": "White"
+    }
+  }
+}

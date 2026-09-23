@@ -1,0 +1,148 @@
+.hero {
+  height: 420px;
+  overflow: hidden;
+  position: relative;
+}
+
+.heroImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(15, 31, 25, 0.1), rgba(15, 31, 25, 0.55));
+  display: flex;
+  align-items: flex-end;
+  padding: 48px 72px;
+}
+
+.heroTitle {
+  font-family: 'Elsie Black', serif;
+  font-size: 52px;
+  color: var(--cream);
+}
+
+.body {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.bodyEyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--taupe);
+  font-weight: 700;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.bodyText {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink);
+  margin-bottom: 24px;
+}
+
+.bodyTextLast {
+  font-size: 17px;
+  line-height: 1.85;
+  color: var(--ink);
+}
+
+.process {
+  background: var(--forest);
+  padding: 90px 72px;
+}
+
+.processTitle {
+  text-align: center;
+  font-family: 'Elsie Black', serif;
+  font-size: 32px;
+  color: var(--cream);
+  margin-bottom: 56px;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.step {
+  text-align: center;
+}
+
+.stepNum {
+  font-family: 'Elsie Black', serif;
+  font-size: 44px;
+  color: var(--tan);
+  margin-bottom: 14px;
+}
+
+.stepTitle {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--cream);
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.stepDesc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--sand);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2px;
+}
+
+.galleryItem {
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.galleryImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+@media (max-width: 900px) {
+  .hero { height: 340px; }
+  .heroOverlay { padding: 32px 40px; }
+  .heroTitle { font-size: 38px; }
+  .body { padding: 56px 24px; }
+  .process { padding: 64px 40px; }
+  .steps { gap: 32px; }
+  .stepNum { font-size: 34px; }
+  .gallery { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .hero { height: 280px; }
+  .heroOverlay { padding: 24px 20px; }
+  .heroTitle { font-size: 28px; }
+  .body { padding: 40px 20px; }
+  .process { padding: 48px 20px; }
+  .processTitle { font-size: 22px; margin-bottom: 36px; }
+  .steps { grid-template-columns: 1fr; gap: 36px; max-width: 100%; }
+  .stepNum { font-size: 28px; }
+  .gallery { grid-template-columns: repeat(2, 1fr); }
+}

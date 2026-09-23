@@ -1,0 +1,56 @@
+@font-face {
+  font-family: 'Elsie Black';
+  src: url('/assets/fonts/Elsie-Black.otf') format('opentype');
+  font-weight: 900;
+}
+@font-face {
+  font-family: 'Elsie';
+  src: url('/assets/fonts/Elsie-Regular.otf') format('opentype');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Century Schoolbook';
+  src: url('/assets/fonts/SCHLBKB.TTF') format('truetype');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Century Schoolbook';
+  src: url('/assets/fonts/SCHLBKI.TTF') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+:root {
+  --cream: #FAF6EE;
+  --ink: #2A2621;
+  --forest: #21473C;
+  --tan: #C09C7C;
+  --taupe: #9A876E;
+  --sand: #CBB394;
+  --body-text: #4a453e;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  min-height: 100vh;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: Georgia, 'Times New Roman', 'Century Schoolbook', serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--tan);
+  color: #0F1F19;
+}
