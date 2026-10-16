@@ -1,7 +1,8 @@
+import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { getCategory, getProduct } from '../data/products';
+import { getCategory, getProduct, isCollage } from '../data/products';
 import { useCart } from '../context/CartContext';
 import styles from './Product.module.css';
 
@@ -18,6 +19,11 @@ export default function Product() {
   const productName = t(`catalog.products.${product.id}.name`, { defaultValue: product.name });
   const productDesc = t(`catalog.products.${product.id}.description`, { defaultValue: product.description });
   const currentFinishName = t(`catalog.finishes.${current.id}`, { defaultValue: current.name });
+
+  // hero first, then the extra views; the chosen view resets when the finish changes
+  const views = [current.img, ...(current.gallery ?? [])];
+  const [view, setView] = useState({ img: current.img, index: 0 });
+  const viewIndex = view.img === current.img ? view.index : 0;
 
   const relatedIndices = [1, 2, 3, 4, 5]
     .map((o) => (selectedIndex + o) % product.finishes.length)
@@ -42,7 +48,22 @@ export default function Product() {
 
       <div className={styles.layout}>
         <div className={styles.imgWrap}>
-          <img src={current.img} className={styles.img} alt={currentFinishName} />
+          <img src={views[viewIndex] ?? current.img} className={styles.img} alt={currentFinishName} />
+          {views.length > 1 && (
+            <div className={styles.thumbs}>
+              {views.map((src, i) => (
+                <img
+                  key={src}
+                  src={src}
+                  className={styles.thumb}
+                  style={{ borderColor: i === viewIndex ? 'var(--tan)' : 'transparent' }}
+                  alt=""
+                  loading="lazy"
+                  onClick={() => setView({ img: current.img, index: i })}
+                />
+              ))}
+            </div>
+          )}
         </div>
         <div className={styles.info}>
           <div className={styles.eyebrow}>{productName}</div>
@@ -101,7 +122,7 @@ export default function Product() {
                   onClick={() => navigate(`/product/${product.id}/${product.finishes.indexOf(f)}`)}
                 >
                   <div className={styles.relatedImgWrap}>
-                    <img src={f.img} className={styles.relatedImg} alt={relatedName} />
+                    <img src={f.img} className={`${styles.relatedImg} ${isCollage(f.img) ? styles.collage : ''}`} alt={relatedName} />
                   </div>
                   <div className={styles.relatedName}>{relatedName}</div>
                 </div>

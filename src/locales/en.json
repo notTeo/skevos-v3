@@ -150,6 +150,86 @@
       "spoon-rest": {
         "name": "Spoon Rest",
         "description": "Solid natural marble, hand-finished with a gently sloped basin. Veining, tone and translucency vary by slab — the piece you receive is one of a kind."
+      },
+      "coaster-round": {
+        "name": "Round Coasters",
+        "description": "Solid marble discs with softened edges, sold as a set. Each slab carries its own veining, so no two sets match exactly."
+      },
+      "coaster-heart": {
+        "name": "Heart Coasters",
+        "description": "Heart-shaped coasters cut from a single marble slab — a small, considered gift for the table."
+      },
+      "coaster-spindle": {
+        "name": "Coaster Set with Spindle",
+        "description": "Round coasters that stack on a marble base with a central spindle, keeping the set together when not in use."
+      },
+      "coaster-hexagon": {
+        "name": "Hexagon Coasters with Stand",
+        "description": "Hexagonal marble coasters with a slotted stand that holds them upright on the counter."
+      },
+      "coaster-triangle": {
+        "name": "Triangle Coasters",
+        "description": "Triangular coasters with eased corners, cut from solid natural marble."
+      },
+      "coaster-square": {
+        "name": "Square Coasters with Stand",
+        "description": "Square marble coasters with a matching slotted stand."
+      },
+      "coaster-wave": {
+        "name": "Wave Coasters with Stand",
+        "description": "Coasters with a scalloped top edge, stored upright in a solid marble holder."
+      },
+      "tray-handles": {
+        "name": "Serving Tray",
+        "description": "A flat marble serving tray with cut-out handles, for cheese, bread or the bar cart."
+      },
+      "bowl-small": {
+        "name": "Small Bowl",
+        "description": "A shallow bowl turned from solid marble — for salt, olives, keys or jewellery."
+      },
+      "platter-oval": {
+        "name": "Oval Platter Set",
+        "description": "Nesting oval platters with a raised rim, in three sizes."
+      },
+      "board-round": {
+        "name": "Round Serving Boards",
+        "description": "Round marble serving boards with a hanging hole, in three sizes."
+      },
+      "plate-round": {
+        "name": "Round Plate Set",
+        "description": "Flat round marble plates in graduated sizes."
+      },
+      "candlestick-cylinder": {
+        "name": "Cylinder Candlesticks",
+        "description": "A trio of cylindrical marble candlesticks in three heights."
+      },
+      "candlestick-block": {
+        "name": "Block Candlesticks",
+        "description": "Square-section marble candlesticks in three heights."
+      },
+      "candlestick-hexagon": {
+        "name": "Hexagon Candlesticks",
+        "description": "Faceted hexagonal marble candlesticks in three heights."
+      },
+      "candlestick-tapered": {
+        "name": "Tapered Candlesticks",
+        "description": "Gently tapered marble candlesticks in three heights."
+      },
+      "tealight-block": {
+        "name": "Tea Light Blocks",
+        "description": "Solid marble blocks with a recessed tea light well, in three heights."
+      },
+      "fluted-plate": {
+        "name": "Fluted Decorative Plate",
+        "description": "A round decorative plate carved with a radiating fluted pattern."
+      },
+      "ashtray-cigar": {
+        "name": "Cigar Ashtray",
+        "description": "A heavy rectangular marble ashtray with cigar rests."
+      },
+      "ashtray-oval": {
+        "name": "Oval Ashtray",
+        "description": "A rounded marble ashtray with three rests."
       }
     },
     "finishes": {
@@ -166,7 +246,10 @@
       "maroko-stoned": "Maroko Stoned",
       "delino": "Delino",
       "foume": "Foume",
-      "white": "White"
+      "white": "White",
+      "blue-gray": "Blue Gray",
+      "cool-grey": "Cool Grey",
+      "dark-grey": "Dark Grey"
     }
   }
 }

@@ -3,7 +3,7 @@
     {
       "id": "home-objects",
       "name": "Home Objects",
-      "image": null
+      "image": "/assets/products/candlestick-cylinder/candlestick-cylinder-green.webp"
     },
     {
       "id": "tableware",
@@ -27,85 +27,2193 @@
           "id": "travertino-classic",
           "name": "Travertino Classic",
           "img": "/assets/products/spoon-rest/spoon-travertino-classic.png",
-          "hex": "#CBB394"
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-travertino-classic-angle.webp",
+            "/assets/products/spoon-rest/spoon-travertino-classic-side.webp",
+            "/assets/products/spoon-rest/spoon-travertino-classic-top.webp"
+          ]
         },
         {
           "id": "travertino-choco",
           "name": "Travertino Choco",
           "img": "/assets/products/spoon-rest/spoon-travertino-choco.png",
-          "hex": "#5A3D2E"
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-travertino-choco-angle.webp",
+            "/assets/products/spoon-rest/spoon-travertino-choco-side.webp",
+            "/assets/products/spoon-rest/spoon-travertino-choco-top.webp"
+          ]
         },
         {
           "id": "green",
           "name": "Green",
           "img": "/assets/products/spoon-rest/spoon-green.png",
-          "hex": "#3F6E58"
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-green-angle.webp",
+            "/assets/products/spoon-rest/spoon-green-side.webp",
+            "/assets/products/spoon-rest/spoon-green-top.webp"
+          ]
         },
         {
           "id": "red",
           "name": "Red",
           "img": "/assets/products/spoon-rest/spoon-red.png",
-          "hex": "#7A3B34"
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-red-angle.webp",
+            "/assets/products/spoon-rest/spoon-red-side.webp",
+            "/assets/products/spoon-rest/spoon-red-top.webp"
+          ]
         },
         {
           "id": "perla",
           "name": "Perla",
           "img": "/assets/products/spoon-rest/spoon-perla.png",
-          "hex": "#D9D3C8"
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-perla-angle.webp",
+            "/assets/products/spoon-rest/spoon-perla-side.webp",
+            "/assets/products/spoon-rest/spoon-perla-top.webp"
+          ]
         },
         {
           "id": "nero-greco",
           "name": "Nero Greco",
           "img": "/assets/products/spoon-rest/spoon-nero-greco.png",
-          "hex": "#2B2B2B"
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-nero-greco-angle.webp",
+            "/assets/products/spoon-rest/spoon-nero-greco-side.webp",
+            "/assets/products/spoon-rest/spoon-nero-greco-top.webp"
+          ]
         },
         {
           "id": "salomi",
           "name": "Salomi",
           "img": "/assets/products/spoon-rest/spoon-salomi.png",
-          "hex": "#C9A876"
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-salomi-angle.webp",
+            "/assets/products/spoon-rest/spoon-salomi-side.webp",
+            "/assets/products/spoon-rest/spoon-salomi-top.webp"
+          ]
         },
         {
           "id": "semi-white",
           "name": "Semi White",
           "img": "/assets/products/spoon-rest/spoon-semi-white.png",
-          "hex": "#E8E2D4"
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-semi-white-angle.webp",
+            "/assets/products/spoon-rest/spoon-semi-white-side.webp",
+            "/assets/products/spoon-rest/spoon-semi-white-top.webp"
+          ]
         },
         {
           "id": "rodiths",
           "name": "Rodiths",
           "img": "/assets/products/spoon-rest/spoon-rodiths.png",
-          "hex": "#C98D7C"
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-rodiths-angle.webp",
+            "/assets/products/spoon-rest/spoon-rodiths-side.webp",
+            "/assets/products/spoon-rest/spoon-rodiths-top.webp"
+          ]
         },
         {
           "id": "maroko-sand",
           "name": "Maroko Sand",
           "img": "/assets/products/spoon-rest/spoon-maroko-sand.png",
-          "hex": "#C7A577"
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-maroko-sand-angle.webp",
+            "/assets/products/spoon-rest/spoon-maroko-sand-side.webp",
+            "/assets/products/spoon-rest/spoon-maroko-sand-top.webp"
+          ]
         },
         {
           "id": "maroko-stoned",
           "name": "Maroko Stoned",
           "img": "/assets/products/spoon-rest/spoon-maroko-stoned.png",
-          "hex": "#8B8478"
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-maroko-stoned-angle.webp",
+            "/assets/products/spoon-rest/spoon-maroko-stoned-side.webp",
+            "/assets/products/spoon-rest/spoon-maroko-stoned-top.webp"
+          ]
         },
         {
           "id": "delino",
           "name": "Delino",
           "img": "/assets/products/spoon-rest/spoon-delino.png",
-          "hex": "#CFC9BD"
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-delino-angle.webp",
+            "/assets/products/spoon-rest/spoon-delino-side.webp",
+            "/assets/products/spoon-rest/spoon-delino-top.webp"
+          ]
         },
         {
           "id": "foume",
           "name": "Foume",
           "img": "/assets/products/spoon-rest/spoon-foume.png",
-          "hex": "#6E6A63"
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-foume-angle.webp",
+            "/assets/products/spoon-rest/spoon-foume-side.webp",
+            "/assets/products/spoon-rest/spoon-foume-top.webp"
+          ]
         },
         {
           "id": "white",
           "name": "White",
           "img": "/assets/products/spoon-rest/spoon-white.png",
-          "hex": "#F2EFE9"
+          "hex": "#F2EFE9",
+          "gallery": [
+            "/assets/products/spoon-rest/spoon-white-angle.webp",
+            "/assets/products/spoon-rest/spoon-white-side.webp",
+            "/assets/products/spoon-rest/spoon-white-top.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-round",
+      "name": "Round Coasters",
+      "category": "tableware",
+      "description": "Solid marble discs with softened edges, sold as a set. Each slab carries its own veining, so no two sets match exactly.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/coaster-round/coaster-round-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-travertino-classic-2.webp",
+            "/assets/products/coaster-round/coaster-round-travertino-classic-3.webp"
+          ]
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/coaster-round/coaster-round-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-travertino-choco-2.webp",
+            "/assets/products/coaster-round/coaster-round-travertino-choco-3.webp"
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-round/coaster-round-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-green-2.webp",
+            "/assets/products/coaster-round/coaster-round-green-3.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-round/coaster-round-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-red-2.webp",
+            "/assets/products/coaster-round/coaster-round-red-3.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-round/coaster-round-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-perla-2.webp",
+            "/assets/products/coaster-round/coaster-round-perla-3.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-round/coaster-round-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-nero-greco-2.webp",
+            "/assets/products/coaster-round/coaster-round-nero-greco-3.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-round/coaster-round-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-salomi-2.webp",
+            "/assets/products/coaster-round/coaster-round-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/coaster-round/coaster-round-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-semi-white-2.webp",
+            "/assets/products/coaster-round/coaster-round-semi-white-3.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-round/coaster-round-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-rodiths-2.webp",
+            "/assets/products/coaster-round/coaster-round-rodiths-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/coaster-round/coaster-round-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-maroko-sand-2.webp",
+            "/assets/products/coaster-round/coaster-round-maroko-sand-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/coaster-round/coaster-round-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-maroko-stoned-2.webp",
+            "/assets/products/coaster-round/coaster-round-maroko-stoned-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-round/coaster-round-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-delino-2.webp",
+            "/assets/products/coaster-round/coaster-round-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-round/coaster-round-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-foume-2.webp",
+            "/assets/products/coaster-round/coaster-round-foume-3.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/coaster-round/coaster-round-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/coaster-round/coaster-round-white-2.webp",
+            "/assets/products/coaster-round/coaster-round-white-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-heart",
+      "name": "Heart Coasters",
+      "category": "tableware",
+      "description": "Heart-shaped coasters cut from a single marble slab — a small, considered gift for the table.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/coaster-heart/coaster-heart-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-travertino-classic-2.webp"
+          ]
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/coaster-heart/coaster-heart-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-travertino-choco-2.webp"
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-heart/coaster-heart-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-heart/coaster-heart-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-heart/coaster-heart-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-heart/coaster-heart-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-heart/coaster-heart-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/coaster-heart/coaster-heart-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-maroko-sand-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/coaster-heart/coaster-heart-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-heart/coaster-heart-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-foume-2.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/coaster-heart/coaster-heart-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/coaster-heart/coaster-heart-white-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-spindle",
+      "name": "Coaster Set with Spindle",
+      "category": "tableware",
+      "description": "Round coasters that stack on a marble base with a central spindle, keeping the set together when not in use.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-travertino-classic-2.webp"
+          ]
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-travertino-choco-2.webp"
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-semi-white-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-maroko-sand-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-foume-2.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/coaster-spindle/coaster-spindle-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/coaster-spindle/coaster-spindle-white-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-hexagon",
+      "name": "Hexagon Coasters with Stand",
+      "category": "tableware",
+      "description": "Hexagonal marble coasters with a slotted stand that holds them upright on the counter.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": []
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-semi-white-2.webp",
+            "/assets/products/coaster-hexagon/coaster-hexagon-semi-white-3.webp",
+            "/assets/products/coaster-hexagon/coaster-hexagon-semi-white-4.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-maroko-sand-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-hexagon/coaster-hexagon-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-hexagon/coaster-hexagon-foume-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-triangle",
+      "name": "Triangle Coasters",
+      "category": "tableware",
+      "description": "Triangular coasters with eased corners, cut from solid natural marble.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-travertino-classic-2.webp"
+          ]
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-travertino-choco-2.webp"
+          ]
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-semi-white-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-maroko-sand-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-foume-2.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/coaster-triangle/coaster-triangle-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/coaster-triangle/coaster-triangle-white-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-square",
+      "name": "Square Coasters with Stand",
+      "category": "tableware",
+      "description": "Square marble coasters with a matching slotted stand.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-square/coaster-square-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-green-2.webp",
+            "/assets/products/coaster-square/coaster-square-green-3.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-square/coaster-square-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-red-2.webp",
+            "/assets/products/coaster-square/coaster-square-red-3.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-square/coaster-square-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-perla-2.webp",
+            "/assets/products/coaster-square/coaster-square-perla-3.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-square/coaster-square-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-nero-greco-2.webp",
+            "/assets/products/coaster-square/coaster-square-nero-greco-3.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-square/coaster-square-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-salomi-2.webp",
+            "/assets/products/coaster-square/coaster-square-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-square/coaster-square-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-rodiths-2.webp",
+            "/assets/products/coaster-square/coaster-square-rodiths-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/coaster-square/coaster-square-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-maroko-stoned-2.webp",
+            "/assets/products/coaster-square/coaster-square-maroko-stoned-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-square/coaster-square-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-delino-2.webp",
+            "/assets/products/coaster-square/coaster-square-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-square/coaster-square-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-foume-2.webp",
+            "/assets/products/coaster-square/coaster-square-foume-3.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/coaster-square/coaster-square-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-white-2.webp",
+            "/assets/products/coaster-square/coaster-square-white-3.webp"
+          ]
+        },
+        {
+          "id": "blue-gray",
+          "name": "Blue Gray",
+          "img": "/assets/products/coaster-square/coaster-square-blue-gray.webp",
+          "hex": "#C5AB94",
+          "gallery": [
+            "/assets/products/coaster-square/coaster-square-blue-gray-2.webp",
+            "/assets/products/coaster-square/coaster-square-blue-gray-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coaster-wave",
+      "name": "Wave Coasters with Stand",
+      "category": "tableware",
+      "description": "Coasters with a scalloped top edge, stored upright in a solid marble holder.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/coaster-wave/coaster-wave-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-green-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-green-3.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/coaster-wave/coaster-wave-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-red-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-red-3.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/coaster-wave/coaster-wave-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-perla-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-perla-3.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/coaster-wave/coaster-wave-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-nero-greco-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-nero-greco-3.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/coaster-wave/coaster-wave-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-salomi-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/coaster-wave/coaster-wave-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-rodiths-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-rodiths-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/coaster-wave/coaster-wave-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-maroko-stoned-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-maroko-stoned-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/coaster-wave/coaster-wave-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-delino-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/coaster-wave/coaster-wave-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-foume-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-foume-3.webp"
+          ]
+        },
+        {
+          "id": "cool-grey",
+          "name": "Cool Grey",
+          "img": "/assets/products/coaster-wave/coaster-wave-cool-grey.webp",
+          "hex": "#CCAA8F",
+          "gallery": [
+            "/assets/products/coaster-wave/coaster-wave-cool-grey-2.webp",
+            "/assets/products/coaster-wave/coaster-wave-cool-grey-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tray-handles",
+      "name": "Serving Tray",
+      "category": "tableware",
+      "description": "A flat marble serving tray with cut-out handles, for cheese, bread or the bar cart.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/tray-handles/tray-handles-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/tray-handles/tray-handles-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/tray-handles/tray-handles-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/tray-handles/tray-handles-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/tray-handles/tray-handles-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/tray-handles/tray-handles-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-semi-white-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/tray-handles/tray-handles-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/tray-handles/tray-handles-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-maroko-sand-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/tray-handles/tray-handles-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/tray-handles/tray-handles-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-foume-2.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/tray-handles/tray-handles-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/tray-handles/tray-handles-white-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bowl-small",
+      "name": "Small Bowl",
+      "category": "tableware",
+      "description": "A shallow bowl turned from solid marble — for salt, olives, keys or jewellery.",
+      "finishes": [
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/bowl-small/bowl-small-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-travertino-choco-2.webp",
+            "/assets/products/bowl-small/bowl-small-travertino-choco-3.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/bowl-small/bowl-small-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-red-2.webp",
+            "/assets/products/bowl-small/bowl-small-red-3.webp",
+            "/assets/products/bowl-small/bowl-small-red-4.webp",
+            "/assets/products/bowl-small/bowl-small-red-5.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/bowl-small/bowl-small-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-perla-2.webp",
+            "/assets/products/bowl-small/bowl-small-perla-3.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/bowl-small/bowl-small-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-nero-greco-2.webp",
+            "/assets/products/bowl-small/bowl-small-nero-greco-3.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/bowl-small/bowl-small-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-salomi-2.webp",
+            "/assets/products/bowl-small/bowl-small-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/bowl-small/bowl-small-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-semi-white-2.webp",
+            "/assets/products/bowl-small/bowl-small-semi-white-3.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/bowl-small/bowl-small-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-rodiths-2.webp",
+            "/assets/products/bowl-small/bowl-small-rodiths-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/bowl-small/bowl-small-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-maroko-sand-2.webp",
+            "/assets/products/bowl-small/bowl-small-maroko-sand-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/bowl-small/bowl-small-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-delino-2.webp",
+            "/assets/products/bowl-small/bowl-small-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/bowl-small/bowl-small-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-foume-2.webp",
+            "/assets/products/bowl-small/bowl-small-foume-3.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/bowl-small/bowl-small-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/bowl-small/bowl-small-white-2.webp",
+            "/assets/products/bowl-small/bowl-small-white-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "platter-oval",
+      "name": "Oval Platter Set",
+      "category": "tableware",
+      "description": "Nesting oval platters with a raised rim, in three sizes.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/platter-oval/platter-oval-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-green-2.webp",
+            "/assets/products/platter-oval/platter-oval-green-3.webp",
+            "/assets/products/platter-oval/platter-oval-green-4.webp",
+            "/assets/products/platter-oval/platter-oval-green-5.webp",
+            "/assets/products/platter-oval/platter-oval-green-6.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/platter-oval/platter-oval-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-red-2.webp",
+            "/assets/products/platter-oval/platter-oval-red-3.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/platter-oval/platter-oval-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-perla-2.webp",
+            "/assets/products/platter-oval/platter-oval-perla-3.webp",
+            "/assets/products/platter-oval/platter-oval-perla-4.webp",
+            "/assets/products/platter-oval/platter-oval-perla-5.webp",
+            "/assets/products/platter-oval/platter-oval-perla-6.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/platter-oval/platter-oval-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-nero-greco-2.webp",
+            "/assets/products/platter-oval/platter-oval-nero-greco-3.webp",
+            "/assets/products/platter-oval/platter-oval-nero-greco-4.webp",
+            "/assets/products/platter-oval/platter-oval-nero-greco-5.webp",
+            "/assets/products/platter-oval/platter-oval-nero-greco-6.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/platter-oval/platter-oval-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-salomi-2.webp",
+            "/assets/products/platter-oval/platter-oval-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/platter-oval/platter-oval-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-semi-white-2.webp",
+            "/assets/products/platter-oval/platter-oval-semi-white-3.webp",
+            "/assets/products/platter-oval/platter-oval-semi-white-4.webp",
+            "/assets/products/platter-oval/platter-oval-semi-white-5.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/platter-oval/platter-oval-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-rodiths-2.webp",
+            "/assets/products/platter-oval/platter-oval-rodiths-3.webp",
+            "/assets/products/platter-oval/platter-oval-rodiths-4.webp",
+            "/assets/products/platter-oval/platter-oval-rodiths-5.webp",
+            "/assets/products/platter-oval/platter-oval-rodiths-6.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/platter-oval/platter-oval-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-maroko-sand-2.webp",
+            "/assets/products/platter-oval/platter-oval-maroko-sand-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/platter-oval/platter-oval-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-delino-2.webp",
+            "/assets/products/platter-oval/platter-oval-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/platter-oval/platter-oval-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-foume-2.webp",
+            "/assets/products/platter-oval/platter-oval-foume-3.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/platter-oval/platter-oval-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/platter-oval/platter-oval-white-2.webp",
+            "/assets/products/platter-oval/platter-oval-white-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "board-round",
+      "name": "Round Serving Boards",
+      "category": "tableware",
+      "description": "Round marble serving boards with a hanging hole, in three sizes.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/board-round/board-round-travertino-classic.webp",
+          "hex": "#CBB394",
+          "gallery": [
+            "/assets/products/board-round/board-round-travertino-classic-2.webp",
+            "/assets/products/board-round/board-round-travertino-classic-3.webp"
+          ]
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/board-round/board-round-travertino-choco.webp",
+          "hex": "#5A3D2E",
+          "gallery": []
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/board-round/board-round-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/board-round/board-round-green-2.webp",
+            "/assets/products/board-round/board-round-green-3.webp",
+            "/assets/products/board-round/board-round-green-4.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/board-round/board-round-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/board-round/board-round-red-2.webp",
+            "/assets/products/board-round/board-round-red-3.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/board-round/board-round-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/board-round/board-round-perla-2.webp",
+            "/assets/products/board-round/board-round-perla-3.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/board-round/board-round-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/board-round/board-round-nero-greco-2.webp",
+            "/assets/products/board-round/board-round-nero-greco-3.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/board-round/board-round-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/board-round/board-round-salomi-2.webp",
+            "/assets/products/board-round/board-round-salomi-3.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/board-round/board-round-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/board-round/board-round-semi-white-2.webp",
+            "/assets/products/board-round/board-round-semi-white-3.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/board-round/board-round-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/board-round/board-round-rodiths-2.webp",
+            "/assets/products/board-round/board-round-rodiths-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/board-round/board-round-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/board-round/board-round-maroko-sand-2.webp",
+            "/assets/products/board-round/board-round-maroko-sand-3.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/board-round/board-round-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/board-round/board-round-maroko-stoned-2.webp",
+            "/assets/products/board-round/board-round-maroko-stoned-3.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/board-round/board-round-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/board-round/board-round-delino-2.webp",
+            "/assets/products/board-round/board-round-delino-3.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/board-round/board-round-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/board-round/board-round-foume-2.webp",
+            "/assets/products/board-round/board-round-foume-3.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/board-round/board-round-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/board-round/board-round-white-2.webp",
+            "/assets/products/board-round/board-round-white-3.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "plate-round",
+      "name": "Round Plate Set",
+      "category": "tableware",
+      "description": "Flat round marble plates in graduated sizes.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/plate-round/plate-round-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/plate-round/plate-round-green-2.webp",
+            "/assets/products/plate-round/plate-round-green-3.webp",
+            "/assets/products/plate-round/plate-round-green-4.webp"
+          ]
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/plate-round/plate-round-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": [
+            "/assets/products/plate-round/plate-round-maroko-sand-2.webp",
+            "/assets/products/plate-round/plate-round-maroko-sand-3.webp",
+            "/assets/products/plate-round/plate-round-maroko-sand-4.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/plate-round/plate-round-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/plate-round/plate-round-maroko-stoned-2.webp",
+            "/assets/products/plate-round/plate-round-maroko-stoned-3.webp",
+            "/assets/products/plate-round/plate-round-maroko-stoned-4.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/plate-round/plate-round-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/plate-round/plate-round-delino-2.webp",
+            "/assets/products/plate-round/plate-round-delino-3.webp",
+            "/assets/products/plate-round/plate-round-delino-4.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/plate-round/plate-round-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/plate-round/plate-round-foume-2.webp",
+            "/assets/products/plate-round/plate-round-foume-3.webp",
+            "/assets/products/plate-round/plate-round-foume-4.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "candlestick-cylinder",
+      "name": "Cylinder Candlesticks",
+      "category": "home-objects",
+      "description": "A trio of cylindrical marble candlesticks in three heights.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-green.webp",
+          "hex": "#3F6E58",
+          "gallery": []
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": []
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/candlestick-cylinder/candlestick-cylinder-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": []
+        }
+      ]
+    },
+    {
+      "id": "candlestick-block",
+      "name": "Block Candlesticks",
+      "category": "home-objects",
+      "description": "Square-section marble candlesticks in three heights.",
+      "finishes": [
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/candlestick-block/candlestick-block-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/candlestick-block/candlestick-block-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/candlestick-block/candlestick-block-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/candlestick-block/candlestick-block-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/candlestick-block/candlestick-block-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/candlestick-block/candlestick-block-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/candlestick-block/candlestick-block-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/candlestick-block/candlestick-block-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": []
+        }
+      ]
+    },
+    {
+      "id": "candlestick-hexagon",
+      "name": "Hexagon Candlesticks",
+      "category": "home-objects",
+      "description": "Faceted hexagonal marble candlesticks in three heights.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-green.webp",
+          "hex": "#3F6E58",
+          "gallery": []
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/candlestick-hexagon/candlestick-hexagon-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": []
+        }
+      ]
+    },
+    {
+      "id": "candlestick-tapered",
+      "name": "Tapered Candlesticks",
+      "category": "home-objects",
+      "description": "Gently tapered marble candlesticks in three heights.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-green.webp",
+          "hex": "#3F6E58",
+          "gallery": []
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": []
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/candlestick-tapered/candlestick-tapered-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": []
+        }
+      ]
+    },
+    {
+      "id": "tealight-block",
+      "name": "Tea Light Blocks",
+      "category": "home-objects",
+      "description": "Solid marble blocks with a recessed tea light well, in three heights.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/tealight-block/tealight-block-green.webp",
+          "hex": "#3F6E58",
+          "gallery": []
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/tealight-block/tealight-block-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/tealight-block/tealight-block-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/tealight-block/tealight-block-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/tealight-block/tealight-block-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/tealight-block/tealight-block-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/tealight-block/tealight-block-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/tealight-block/tealight-block-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "dark-grey",
+          "name": "Dark Grey",
+          "img": "/assets/products/tealight-block/tealight-block-dark-grey.webp",
+          "hex": "#A2948A",
+          "gallery": []
+        }
+      ]
+    },
+    {
+      "id": "fluted-plate",
+      "name": "Fluted Decorative Plate",
+      "category": "home-objects",
+      "description": "A round decorative plate carved with a radiating fluted pattern.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/fluted-plate/fluted-plate-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/fluted-plate/fluted-plate-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/fluted-plate/fluted-plate-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/fluted-plate/fluted-plate-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/fluted-plate/fluted-plate-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/fluted-plate/fluted-plate-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/fluted-plate/fluted-plate-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/fluted-plate/fluted-plate-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-foume-2.webp"
+          ]
+        },
+        {
+          "id": "cool-grey",
+          "name": "Cool Grey",
+          "img": "/assets/products/fluted-plate/fluted-plate-cool-grey.webp",
+          "hex": "#B9ACA3",
+          "gallery": [
+            "/assets/products/fluted-plate/fluted-plate-cool-grey-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ashtray-cigar",
+      "name": "Cigar Ashtray",
+      "category": "home-objects",
+      "description": "A heavy rectangular marble ashtray with cigar rests.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-green.webp",
+          "hex": "#3F6E58",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-green-2.webp"
+          ]
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-red.webp",
+          "hex": "#7A3B34",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-red-2.webp"
+          ]
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-perla-2.webp"
+          ]
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-nero-greco-2.webp"
+          ]
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-salomi-2.webp"
+          ]
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-semi-white-2.webp"
+          ]
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-rodiths-2.webp"
+          ]
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-maroko-stoned.webp",
+          "hex": "#8B8478",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-maroko-stoned-2.webp"
+          ]
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-delino-2.webp"
+          ]
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-foume-2.webp"
+          ]
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/ashtray-cigar/ashtray-cigar-white.webp",
+          "hex": "#F2EFEA",
+          "gallery": [
+            "/assets/products/ashtray-cigar/ashtray-cigar-white-2.webp"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ashtray-oval",
+      "name": "Oval Ashtray",
+      "category": "home-objects",
+      "description": "A rounded marble ashtray with three rests.",
+      "finishes": [
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-green.webp",
+          "hex": "#3F6E58",
+          "gallery": []
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-red.webp",
+          "hex": "#7A3B34",
+          "gallery": []
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-perla.webp",
+          "hex": "#D9D3C8",
+          "gallery": []
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-nero-greco.webp",
+          "hex": "#2B2B2B",
+          "gallery": []
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-salomi.webp",
+          "hex": "#C9A876",
+          "gallery": []
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-semi-white.webp",
+          "hex": "#E8E2D4",
+          "gallery": []
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-rodiths.webp",
+          "hex": "#C98D7C",
+          "gallery": []
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-maroko-sand.webp",
+          "hex": "#C7A577",
+          "gallery": []
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-delino.webp",
+          "hex": "#CFC9BD",
+          "gallery": []
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/ashtray-oval/ashtray-oval-foume.webp",
+          "hex": "#6E6A63",
+          "gallery": []
         }
       ]
     }

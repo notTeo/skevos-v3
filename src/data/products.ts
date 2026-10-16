@@ -5,6 +5,8 @@ export interface Finish {
   name: string;
   img: string;
   hex: string;
+  // extra views of this finish, shown as thumbnails under the main image
+  gallery?: string[];
 }
 
 export interface Product {
@@ -53,6 +55,11 @@ export function getCategory(categoryId: string | undefined): Category | undefine
 
 export function getProductsByCategory(categoryId: string): Product[] {
   return PRODUCTS.filter((p) => p.category === categoryId);
+}
+
+// The original spoon-rest PNG heroes are 2x2 collages; cards crop them to one quadrant
+export function isCollage(src: string): boolean {
+  return src.endsWith('.png');
 }
 
 export const FEATURED_INDICES = [0, 2, 3, 5, 8, 11];
