@@ -95,10 +95,11 @@
 
 .textarea {
   width: 100%;
-  border: 1.5px solid rgba(15, 31, 25, 0.15);
+  border: 1.5px solid var(--line);
   border-radius: 2px;
   padding: 16px;
   min-height: 120px;
+  background: var(--field);
   color: var(--ink);
   font-size: 14px;
   font-family: inherit;
@@ -120,7 +121,7 @@
 }
 
 .panel {
-  background: var(--forest);
+  background: var(--band);
   padding: 44px;
   border-radius: 2px;
 }
@@ -128,7 +129,7 @@
 .panelTitle {
   font-family: 'Elsie Black', serif;
   font-size: 24px;
-  color: var(--cream);
+  color: var(--band-text);
   margin-bottom: 24px;
 }
 
@@ -147,7 +148,7 @@
 
 .panelValue {
   font-size: 15px;
-  color: var(--cream);
+  color: var(--band-text);
 }
 
 .panelDesc {

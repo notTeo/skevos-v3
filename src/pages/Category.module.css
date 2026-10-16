@@ -1,0 +1,137 @@
+.crumb {
+  padding: 28px 72px 0;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--taupe);
+}
+
+.crumbLink {
+  cursor: pointer;
+}
+
+.crumbCurrent {
+  color: var(--forest);
+}
+
+.header {
+  padding: 40px 72px 0;
+  text-align: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--taupe);
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.title {
+  font-family: 'Elsie Black', serif;
+  font-size: 44px;
+  color: var(--forest);
+}
+
+.card {
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 36px;
+  padding: 44px 72px 100px;
+}
+
+.imgWrap {
+  aspect-ratio: 1;
+  overflow: hidden;
+  position: relative;
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  object-fit: cover;
+}
+
+.cardFooter {
+  padding: 16px 2px 0;
+}
+
+.cardName {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 4px;
+}
+
+.cardPrice {
+  font-size: 12px;
+  color: var(--taupe);
+  margin-bottom: 4px;
+}
+
+.cardMeta {
+  font-size: 12px;
+  color: var(--body-text);
+}
+
+.empty {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 72px 20px 110px;
+  text-align: center;
+}
+
+.emptyTitle {
+  font-family: 'Elsie Black', serif;
+  font-size: 26px;
+  color: var(--forest);
+  margin-bottom: 14px;
+}
+
+.emptyDesc {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--body-text);
+  margin-bottom: 28px;
+}
+
+.emptyBtn {
+  display: inline-block;
+  border: 1.5px solid var(--forest);
+  color: var(--forest);
+  padding: 12px 24px;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2px;
+}
+
+.emptyBtn:hover {
+  background: var(--forest);
+  color: var(--cream);
+}
+
+@media (max-width: 900px) {
+  .crumb { padding: 24px 40px 0; }
+  .header { padding: 28px 40px 0; }
+  .title { font-size: 34px; }
+  .grid { grid-template-columns: repeat(3, 1fr); gap: 24px; padding: 32px 40px 64px; }
+}
+
+@media (max-width: 600px) {
+  .crumb { padding: 20px 20px 0; }
+  .header { padding: 24px 20px 0; }
+  .title { font-size: 26px; }
+  .grid { grid-template-columns: repeat(2, 1fr); gap: 16px; padding: 24px 20px 48px; }
+  .cardName { font-size: 13px; }
+}

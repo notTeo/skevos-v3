@@ -16,7 +16,7 @@
 .heroOverlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(15, 31, 25, 0.1), rgba(15, 31, 25, 0.55));
+  background: linear-gradient(180deg, rgba(15, 31, 25, 0.7) 0, rgba(15, 31, 25, 0.1) 40%, rgba(15, 31, 25, 0.55));
   display: flex;
   align-items: flex-end;
   padding: 48px 72px;
@@ -25,7 +25,7 @@
 .heroTitle {
   font-family: 'Elsie Black', serif;
   font-size: 52px;
-  color: var(--cream);
+  color: var(--band-text);
 }
 
 .body {
@@ -58,7 +58,7 @@
 }
 
 .process {
-  background: var(--forest);
+  background: var(--band);
   padding: 90px 72px;
 }
 
@@ -66,7 +66,7 @@
   text-align: center;
   font-family: 'Elsie Black', serif;
   font-size: 32px;
-  color: var(--cream);
+  color: var(--band-text);
   margin-bottom: 56px;
 }
 
@@ -92,7 +92,7 @@
 .stepTitle {
   font-size: 15px;
   font-weight: 700;
-  color: var(--cream);
+  color: var(--band-text);
   margin-bottom: 10px;
   letter-spacing: 0.5px;
 }

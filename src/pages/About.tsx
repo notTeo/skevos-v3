@@ -9,10 +9,10 @@ const STEPS = [
 ];
 
 const GALLERY = [
-  '/assets/spoon-nero-greco.png',
-  '/assets/spoon-rodiths.png',
-  '/assets/spoon-maroko-sand.png',
-  '/assets/spoon-foume.png',
+  '/assets/products/spoon-rest/spoon-nero-greco.png',
+  '/assets/products/spoon-rest/spoon-rodiths.png',
+  '/assets/products/spoon-rest/spoon-maroko-sand.png',
+  '/assets/products/spoon-rest/spoon-foume.png',
 ];
 
 export default function About() {
@@ -21,7 +21,7 @@ export default function About() {
   return (
     <div>
       <div className={styles.hero}>
-        <img src="/assets/spoon-travertino-choco.png" className={styles.heroImg} alt="" />
+        <img src="/assets/products/spoon-rest/spoon-travertino-choco.png" className={styles.heroImg} alt="" />
         <div className={styles.heroOverlay}>
           <div className={styles.heroTitle}>{t('about.heroTitle')}</div>
         </div>

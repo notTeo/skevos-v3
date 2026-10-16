@@ -1,0 +1,113 @@
+{
+  "categories": [
+    {
+      "id": "home-objects",
+      "name": "Home Objects",
+      "image": null
+    },
+    {
+      "id": "tableware",
+      "name": "Tableware",
+      "image": "/assets/products/spoon-rest/spoon-travertino-classic.png"
+    },
+    {
+      "id": "furniture",
+      "name": "Furniture",
+      "image": null
+    }
+  ],
+  "products": [
+    {
+      "id": "spoon-rest",
+      "name": "Spoon Rest",
+      "category": "tableware",
+      "description": "Solid natural marble, hand-finished with a gently sloped basin. Veining, tone and translucency vary by slab — the piece you receive is one of a kind.",
+      "finishes": [
+        {
+          "id": "travertino-classic",
+          "name": "Travertino Classic",
+          "img": "/assets/products/spoon-rest/spoon-travertino-classic.png",
+          "hex": "#CBB394"
+        },
+        {
+          "id": "travertino-choco",
+          "name": "Travertino Choco",
+          "img": "/assets/products/spoon-rest/spoon-travertino-choco.png",
+          "hex": "#5A3D2E"
+        },
+        {
+          "id": "green",
+          "name": "Green",
+          "img": "/assets/products/spoon-rest/spoon-green.png",
+          "hex": "#3F6E58"
+        },
+        {
+          "id": "red",
+          "name": "Red",
+          "img": "/assets/products/spoon-rest/spoon-red.png",
+          "hex": "#7A3B34"
+        },
+        {
+          "id": "perla",
+          "name": "Perla",
+          "img": "/assets/products/spoon-rest/spoon-perla.png",
+          "hex": "#D9D3C8"
+        },
+        {
+          "id": "nero-greco",
+          "name": "Nero Greco",
+          "img": "/assets/products/spoon-rest/spoon-nero-greco.png",
+          "hex": "#2B2B2B"
+        },
+        {
+          "id": "salomi",
+          "name": "Salomi",
+          "img": "/assets/products/spoon-rest/spoon-salomi.png",
+          "hex": "#C9A876"
+        },
+        {
+          "id": "semi-white",
+          "name": "Semi White",
+          "img": "/assets/products/spoon-rest/spoon-semi-white.png",
+          "hex": "#E8E2D4"
+        },
+        {
+          "id": "rodiths",
+          "name": "Rodiths",
+          "img": "/assets/products/spoon-rest/spoon-rodiths.png",
+          "hex": "#C98D7C"
+        },
+        {
+          "id": "maroko-sand",
+          "name": "Maroko Sand",
+          "img": "/assets/products/spoon-rest/spoon-maroko-sand.png",
+          "hex": "#C7A577"
+        },
+        {
+          "id": "maroko-stoned",
+          "name": "Maroko Stoned",
+          "img": "/assets/products/spoon-rest/spoon-maroko-stoned.png",
+          "hex": "#8B8478"
+        },
+        {
+          "id": "delino",
+          "name": "Delino",
+          "img": "/assets/products/spoon-rest/spoon-delino.png",
+          "hex": "#CFC9BD"
+        },
+        {
+          "id": "foume",
+          "name": "Foume",
+          "img": "/assets/products/spoon-rest/spoon-foume.png",
+          "hex": "#6E6A63"
+        },
+        {
+          "id": "white",
+          "name": "White",
+          "img": "/assets/products/spoon-rest/spoon-white.png",
+          "hex": "#F2EFE9"
+        }
+      ]
+    }
+  ]
+}

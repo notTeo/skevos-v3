@@ -1,9 +1,9 @@
 .hero {
   min-height: 600px;
-  background: var(--forest);
+  background: var(--band);
   display: flex;
   align-items: center;
-  padding: 80px 72px;
+  padding: calc(80px + var(--nav-h)) 72px 80px;
 }
 
 .heroInner {
@@ -25,7 +25,7 @@
   font-family: 'Elsie Black', serif;
   font-size: 72px;
   line-height: 1.03;
-  color: var(--cream);
+  color: var(--band-text);
   margin-bottom: 28px;
 }
 
@@ -57,7 +57,7 @@
 
 .secondaryBtn {
   border: 1.5px solid var(--sand);
-  color: var(--cream);
+  color: var(--band-text);
   padding: 15px 30px;
   font-size: 13px;
   letter-spacing: 1.5px;
@@ -144,7 +144,7 @@
 }
 
 .story {
-  background: var(--forest);
+  background: var(--band);
   padding: 160px 72px;
   text-align: center;
 }
@@ -161,7 +161,7 @@
 .storyTitle {
   font-family: 'Elsie Black', serif;
   font-size: 38px;
-  color: var(--cream);
+  color: var(--band-text);
   line-height: 1.15;
   margin-bottom: 28px;
 }
@@ -169,7 +169,7 @@
 .storyLink {
   display: inline-block;
   border-bottom: 1.5px solid var(--tan);
-  color: var(--cream);
+  color: var(--band-text);
   font-size: 13px;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -211,7 +211,7 @@
 }
 
 @media (max-width: 900px) {
-  .hero { padding: 56px 40px; min-height: 480px; }
+  .hero { padding: calc(56px + var(--nav-h)) 40px 56px; min-height: 480px; }
   .heroTitle { font-size: 48px; }
   .intro { padding: 64px 40px 32px; }
   .introTitle { font-size: 32px; }
@@ -222,7 +222,7 @@
 }
 
 @media (max-width: 600px) {
-  .hero { padding: 40px 20px; min-height: 420px; }
+  .hero { padding: calc(40px + var(--nav-h)) 20px 40px; min-height: 420px; }
   .heroTitle { font-size: 34px; }
   .heroDesc { max-width: 100%; }
   .heroActions { flex-direction: column; width: 100%; }

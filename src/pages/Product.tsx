@@ -1,7 +1,7 @@
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { getProduct } from '../data/products';
+import { getCategory, getProduct } from '../data/products';
 import { useCart } from '../context/CartContext';
 import styles from './Product.module.css';
 
@@ -11,6 +11,7 @@ export default function Product() {
   const { addItem, openDrawer } = useCart();
   const { productId, finishIndex } = useParams();
   const product = getProduct(productId);
+  const category = getCategory(product.category);
   const selectedIndex = Number(finishIndex) || 0;
   const current = product.finishes[selectedIndex] ?? product.finishes[0];
 
@@ -28,6 +29,14 @@ export default function Product() {
       <div className={styles.crumb}>
         <span className={styles.crumbLink} onClick={() => navigate('/products')}>{t('product.breadcrumbProducts')}</span>
         &nbsp;/&nbsp;
+        {category && (
+          <>
+            <span className={styles.crumbLink} onClick={() => navigate(`/products/${category.id}`)}>
+              {t(`products.categories.${category.id}`, { defaultValue: category.name })}
+            </span>
+            &nbsp;/&nbsp;
+          </>
+        )}
         <span className={styles.crumbCurrent}>{productName} &mdash; {currentFinishName}</span>
       </div>
 
@@ -48,7 +57,7 @@ export default function Product() {
                 className={styles.swatch}
                 style={{
                   background: f.hex,
-                  border: i === selectedIndex ? '3px solid #C09C7C' : '3px solid transparent',
+                  border: i === selectedIndex ? '3px solid var(--tan)' : '3px solid transparent',
                 }}
                 title={t(`catalog.finishes.${f.id}`, { defaultValue: f.name })}
                 onClick={() => navigate(`/product/${product.id}/${i}`)}

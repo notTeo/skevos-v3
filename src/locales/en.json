@@ -7,12 +7,17 @@
     "menu": "Menu",
     "openMenu": "Open menu",
     "closeMenu": "Close menu",
-    "cart": "View cart"
+    "cart": "View cart",
+    "themeLight": "Switch to light theme",
+    "themeDark": "Switch to dark theme",
+    "language": "Language",
+    "theme": "Theme",
+    "showCategories": "Show categories",
+    "allProducts": "All products"
   },
   "footer": {
     "copyright": "© Skevos. Elegant marble utensils, made in Greece.",
-    "instagram": "Instagram",
-    "pinterest": "Pinterest"
+    "instagram": "Instagram"
   },
   "home": {
     "eyebrow": "Handcut Greek Marble",
@@ -37,11 +42,18 @@
     "title": "Our Products",
     "desc": "Solid Greek marble, offered across a range of natural finishes. Prices on request — retail and trade.",
     "priceOnRequest": "Price on request",
-    "addToCart": "Add to cart",
     "categories": {
-      "All": "All",
-      "Kitchen": "Kitchen"
-    }
+      "home-objects": "Home Objects",
+      "tableware": "Tableware",
+      "furniture": "Furniture"
+    },
+    "comingSoon": "Coming soon",
+    "comingSoonDesc": "We're working on new pieces for this collection. Get in touch if you're looking for something specific.",
+    "contactUs": "Contact us",
+    "finishCount_one": "{{count}} finish",
+    "finishCount_other": "{{count}} finishes",
+    "pieceCount_one": "{{count}} piece",
+    "pieceCount_other": "{{count}} pieces"
   },
   "product": {
     "breadcrumbProducts": "Products",
@@ -87,7 +99,7 @@
   "contact": {
     "eyebrow": "Get in touch",
     "title": "Contact & Wholesale",
-    "desc": "Retail questions, wholesale pricing, press — we read every message.",
+    "desc": "Retail questions and wholesale pricing — we read every message.",
     "nameLabel": "Name",
     "namePlaceholder": "Jane Doe",
     "emailLabel": "Email",
@@ -95,8 +107,7 @@
     "reasonLabel": "I'm inquiring about",
     "reasons": {
       "Retail": "Retail",
-      "Wholesale": "Wholesale",
-      "Press": "Press"
+      "Wholesale": "Wholesale"
     },
     "messageLabel": "Message",
     "messagePlaceholder": "Tell us what you're looking for...",

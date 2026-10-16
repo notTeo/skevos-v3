@@ -3,23 +3,43 @@
   top: 0;
   z-index: 50;
   background: var(--cream);
-  border-bottom: 1px solid rgba(15, 31, 25, 0.12);
+  border-bottom: 1px solid var(--line);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 14px 48px;
+  height: var(--nav-h);
+  padding: 0 48px;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.navTop {
+  background: transparent;
+  border-bottom-color: transparent;
+}
+
+.navOverlay {
+  margin-bottom: calc(-1 * var(--nav-h));
+}
+
+.navOverHero .bar {
+  --forest: var(--band-text);
+}
+
+.logoLink {
+  display: flex;
+  align-items: center;
 }
 
 .logo {
-  height: 38px;
+  height: 30px;
   width: auto;
-  cursor: pointer;
+  display: block;
 }
 
 .right {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 28px;
 }
 
 .links {
@@ -63,8 +83,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
+  margin-right: -7px;
   background: none;
   border: none;
   color: var(--forest);
@@ -75,7 +96,7 @@
 .backdrop {
   position: fixed;
   inset: 0;
-  background: rgba(15, 31, 25, 0.45);
+  background: var(--overlay);
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.25s ease;
@@ -92,76 +113,242 @@
   top: 0;
   right: 0;
   height: 100%;
-  width: min(78vw, 320px);
+  height: 100dvh;
+  width: min(88vw, 380px);
   background: var(--cream);
-  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
   transform: translateX(100%);
-  transition: transform 0.3s ease;
+  visibility: hidden;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s linear 0.35s;
   z-index: 70;
   display: flex;
   flex-direction: column;
-  padding: 20px 28px 40px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding-bottom: env(safe-area-inset-bottom);
 }
 
 .drawerOpen {
+  box-shadow: -4px 0 24px rgba(0, 0, 0, 0.15);
   transform: translateX(0);
+  visibility: visible;
+  transition: transform 0.35s cubic-bezier(0.22, 1, 0.36, 1), visibility 0s;
 }
 
 .drawerHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 36px;
+  padding: 16px 20px 16px 24px;
+  border-bottom: 1px solid var(--line);
 }
 
-.drawerHeading {
-  font-family: 'Elsie Black', serif;
-  font-size: 20px;
-  color: var(--forest);
+.drawerLogo {
+  height: 26px;
+  width: auto;
+  display: block;
 }
 
 .closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
   background: none;
-  border: none;
-  font-size: 28px;
-  line-height: 1;
+  border: 1px solid var(--line);
   color: var(--forest);
   cursor: pointer;
-  padding: 4px;
+  padding: 0;
 }
 
-.drawerLinks {
+.drawerNav {
+  padding: 8px 24px 0;
+}
+
+/* items slide in one after another once the drawer is open */
+.drawerItem,
+.drawerFooter {
+  opacity: 0;
+  transform: translateX(16px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.drawerOpen .drawerItem,
+.drawerOpen .drawerFooter {
+  opacity: 1;
+  transform: none;
+  transition: opacity 0.4s ease, transform 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: calc(0.12s + var(--i, 0) * 0.06s);
+}
+
+.drawerItem {
+  border-bottom: 1px solid var(--line);
+}
+
+.drawerRow {
+  display: flex;
+  align-items: center;
+}
+
+.drawerLink {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 68px;
+  font-family: 'Elsie Black', serif;
+  font-size: 30px;
+  line-height: 1.1;
+  color: var(--forest);
+}
+
+.drawerLinkActive {
+  color: var(--tan);
+}
+
+.expandBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  margin-right: -12px;
+  background: none;
+  border: none;
+  color: var(--forest);
+  cursor: pointer;
+  padding: 0;
+}
+
+.expandBtn svg {
+  transition: transform 0.25s ease;
+}
+
+.expandBtnOpen svg {
+  transform: rotate(180deg);
+}
+
+.subLinks {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.3s ease;
+}
+
+.subLinksOpen {
+  grid-template-rows: 1fr;
+}
+
+.subLinksInner {
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  gap: 28px;
-  font-size: 15px;
+}
+
+.subLinksInner > :last-child {
+  margin-bottom: 14px;
+}
+
+.subLink {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding-left: 16px;
+  border-left: 2px solid var(--line);
+  font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 700;
+  color: var(--body-text);
+}
+
+.subLinkActive {
+  border-left-color: var(--tan);
   color: var(--forest);
+}
+
+.drawerFooter {
+  margin-top: auto;
+  padding: 32px 24px 28px;
 }
 
 .drawerContact {
-  align-self: flex-start;
-  border: 1.5px solid var(--tan);
-  color: var(--forest);
-  padding: 10px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-height: 52px;
   border-radius: 999px;
-  font-size: 12px;
+  background: var(--forest);
+  color: var(--cream);
+  font-size: 13px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 700;
-  cursor: pointer;
-  margin-top: 4px;
 }
 
-.drawerLanguage {
-  margin-top: 32px;
+.prefs {
+  margin-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.prefRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 52px;
+  border-bottom: 1px solid var(--line);
+}
+
+.prefLabel {
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--taupe);
+}
+
+.prefToggle {
+  width: 44px;
+  height: 44px;
+  margin-right: -12px;
+}
+
+.drawerMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+  margin-top: 20px;
+  font-size: 12px;
+  color: var(--taupe);
+}
+
+.metaLink {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .drawer,
+  .drawerOpen,
+  .drawerItem,
+  .drawerFooter,
+  .drawerOpen .drawerItem,
+  .drawerOpen .drawerFooter,
+  .subLinks,
+  .backdrop {
+    transition: none;
+    transform: none;
+  }
+  .drawer:not(.drawerOpen) {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
   .nav {
-    padding: 14px 24px;
+    padding: 0 24px;
   }
   .right {
     display: none;
@@ -173,8 +360,14 @@
 
 @media (max-width: 600px) {
   .nav {
-    padding: 12px 16px;
+    padding: 0 16px;
   }
+  .logo {
+    height: 26px;
+  }
+}
+
+@media (max-width: 420px) {
   .drawer {
     width: 100vw;
   }

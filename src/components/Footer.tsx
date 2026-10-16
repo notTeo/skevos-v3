@@ -1,5 +1,5 @@
 import { useTranslation } from 'react-i18next';
-import { Camera, Pin } from 'lucide-react';
+import { Camera } from 'lucide-react';
 import styles from './Footer.module.css';
 
 interface FooterProps {
@@ -17,10 +17,6 @@ export default function Footer({ topPadding }: FooterProps) {
           <a href="#" className={styles.socialLink} aria-label={t('footer.instagram')}>
             <Camera size={16} strokeWidth={1.75} />
             <span>{t('footer.instagram')}</span>
-          </a>
-          <a href="#" className={styles.socialLink} aria-label={t('footer.pinterest')}>
-            <Pin size={16} strokeWidth={1.75} />
-            <span>{t('footer.pinterest')}</span>
           </a>
         </div>
       </div>

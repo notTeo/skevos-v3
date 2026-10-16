@@ -3,7 +3,7 @@
 }
 
 .inner {
-  border-top: 1px solid rgba(15, 31, 25, 0.12);
+  border-top: 1px solid var(--line);
   padding: 36px 0 40px;
   display: flex;
   justify-content: space-between;

@@ -7,12 +7,17 @@
     "menu": "Μενού",
     "openMenu": "Άνοιγμα μενού",
     "closeMenu": "Κλείσιμο μενού",
-    "cart": "Προβολή καλαθιού"
+    "cart": "Προβολή καλαθιού",
+    "themeLight": "Αλλαγή σε φωτεινό θέμα",
+    "themeDark": "Αλλαγή σε σκούρο θέμα",
+    "language": "Γλώσσα",
+    "theme": "Θέμα",
+    "showCategories": "Εμφάνιση κατηγοριών",
+    "allProducts": "Όλα τα προϊόντα"
   },
   "footer": {
     "copyright": "© Skevos. Κομψά μαρμάρινα σκεύη, φτιαγμένα στην Ελλάδα.",
-    "instagram": "Instagram",
-    "pinterest": "Pinterest"
+    "instagram": "Instagram"
   },
   "home": {
     "eyebrow": "Χειροποίητο Ελληνικό Μάρμαρο",
@@ -37,11 +42,18 @@
     "title": "Τα Προϊόντα μας",
     "desc": "Συμπαγές ελληνικό μάρμαρο, διαθέσιμο σε ποικιλία φυσικών φινιρισμάτων. Τιμές κατόπιν ζήτησης — λιανική και χονδρική.",
     "priceOnRequest": "Τιμή κατόπιν ζήτησης",
-    "addToCart": "Προσθήκη στο καλάθι",
     "categories": {
-      "All": "Όλα",
-      "Kitchen": "Κουζίνα"
-    }
+      "home-objects": "Αντικείμενα Σπιτιού",
+      "tableware": "Επιτραπέζια",
+      "furniture": "Έπιπλα"
+    },
+    "comingSoon": "Σύντομα κοντά σας",
+    "comingSoonDesc": "Ετοιμάζουμε νέα κομμάτια για αυτή τη συλλογή. Επικοινωνήστε μαζί μας αν ψάχνετε κάτι συγκεκριμένο.",
+    "contactUs": "Επικοινωνήστε μαζί μας",
+    "finishCount_one": "{{count}} φινίρισμα",
+    "finishCount_other": "{{count}} φινιρίσματα",
+    "pieceCount_one": "{{count}} κομμάτι",
+    "pieceCount_other": "{{count}} κομμάτια"
   },
   "product": {
     "breadcrumbProducts": "Προϊόντα",
@@ -87,7 +99,7 @@
   "contact": {
     "eyebrow": "Επικοινωνήστε μαζί μας",
     "title": "Επικοινωνία & Χονδρική",
-    "desc": "Ερωτήσεις λιανικής, τιμές χονδρικής, τύπος — διαβάζουμε κάθε μήνυμα.",
+    "desc": "Ερωτήσεις λιανικής και τιμές χονδρικής — διαβάζουμε κάθε μήνυμα.",
     "nameLabel": "Όνομα",
     "namePlaceholder": "Μαρία Παπαδοπούλου",
     "emailLabel": "Email",
@@ -95,8 +107,7 @@
     "reasonLabel": "Ενδιαφέρομαι για",
     "reasons": {
       "Retail": "Λιανική",
-      "Wholesale": "Χονδρική",
-      "Press": "Τύπος"
+      "Wholesale": "Χονδρική"
     },
     "messageLabel": "Μήνυμα",
     "messagePlaceholder": "Πείτε μας τι ψάχνετε...",

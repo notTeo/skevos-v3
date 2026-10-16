@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import styles from './Contact.module.css';
 
-const REASONS = ['Retail', 'Wholesale', 'Press'];
+const REASONS = ['Retail', 'Wholesale'];
 
 export default function Contact() {
   const { t } = useTranslation();

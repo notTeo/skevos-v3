@@ -28,6 +28,36 @@
   --taupe: #9A876E;
   --sand: #CBB394;
   --body-text: #4a453e;
+  --line: rgba(15, 31, 25, 0.12);
+  --surface: #f0e9dc;
+  --field: #fff;
+  --overlay: rgba(15, 31, 25, 0.45);
+  --band: #21473C;
+  --band-text: #FAF6EE;
+  --error: #7A3B34;
+  --nav-h: 64px;
+  color-scheme: light;
+}
+
+:root[data-theme='dark'] {
+  --cream: #0F1F19;
+  --ink: #EFE7D8;
+  --forest: #EFE7D8;
+  --taupe: #A99A82;
+  --body-text: #C9C0B0;
+  --line: rgba(250, 246, 238, 0.14);
+  --surface: #17302A;
+  --field: #17302A;
+  --overlay: rgba(0, 0, 0, 0.6);
+  --band: #17362E;
+  --error: #E0958B;
+  color-scheme: dark;
+}
+
+@media (max-width: 600px) {
+  :root {
+    --nav-h: 58px;
+  }
 }
 
 * {
