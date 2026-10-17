@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { getCategory, getProduct, isCollage, swatchBackground } from '../data/products';
+import { getCategory, getProduct, swatchBackground } from '../data/products';
 import { useCart } from '../context/CartContext';
 import styles from './Product.module.css';
 
@@ -25,10 +25,6 @@ export default function Product() {
   const [view, setView] = useState({ img: current.img, index: 0 });
   const viewIndex = view.img === current.img ? view.index : 0;
 
-  const relatedIndices = [1, 2, 3, 4, 5]
-    .map((o) => (selectedIndex + o) % product.finishes.length)
-    .filter((i) => i !== selectedIndex);
-  const relatedFinishes = relatedIndices.map((i) => product.finishes[i]);
 
   return (
     <div>
@@ -108,29 +104,6 @@ export default function Product() {
           </div>
         </div>
       </div>
-
-      {relatedFinishes.length > 0 && (
-        <div className={styles.relatedWrap}>
-          <div className={styles.relatedLabel}>{t('product.otherFinishes')}</div>
-          <div className={styles.relatedGrid}>
-            {relatedFinishes.map((f) => {
-              const relatedName = t(`catalog.finishes.${f.id}`, { defaultValue: f.name });
-              return (
-                <div
-                  key={f.id}
-                  className={styles.relatedItem}
-                  onClick={() => navigate(`/product/${product.id}/${product.finishes.indexOf(f)}`)}
-                >
-                  <div className={styles.relatedImgWrap}>
-                    <img src={f.img} className={`${styles.relatedImg} ${isCollage(f.img) ? styles.collage : ''}`} alt={relatedName} />
-                  </div>
-                  <div className={styles.relatedName}>{relatedName}</div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
 
       <Footer topPadding="40px" />
     </div>

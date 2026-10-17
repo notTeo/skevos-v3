@@ -145,63 +145,11 @@
   margin-bottom: 4px;
 }
 
-.relatedWrap {
-  padding: 0 72px 30px;
-}
-
-.relatedLabel {
-  font-size: 12px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--taupe);
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.relatedGrid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 24px;
-}
-
-.relatedItem {
-  cursor: pointer;
-}
-
-.relatedImgWrap {
-  aspect-ratio: 1;
-  overflow: hidden;
-  position: relative;
-  border-radius: var(--radius);
-}
-
-.relatedImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.relatedImg.collage {
-  width: 200%;
-  height: 200%;
-}
-
-.relatedName {
-  padding-top: 10px;
-  font-size: 12px;
-  color: var(--forest);
-}
-
 @media (max-width: 900px) {
   .crumb { padding: 20px 40px 0; }
   .layout { grid-template-columns: 1fr; gap: 32px; padding: 20px 40px 64px; }
   .title { font-size: 32px; }
   .info { padding-top: 0; }
-  .relatedWrap { padding: 0 40px 24px; }
-  .relatedGrid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
 }
 
 @media (max-width: 600px) {
@@ -209,8 +157,6 @@
   .layout { padding: 16px 20px 48px; gap: 24px; }
   .title { font-size: 26px; }
   .specs { grid-template-columns: 1fr; gap: 14px; }
-  .relatedWrap { padding: 0 20px 24px; }
-  .relatedGrid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
   .actions { flex-direction: column; }
   .thumb { width: 56px; height: 56px; }
   .primaryBtn, .secondaryBtn { width: 100%; text-align: center; }
