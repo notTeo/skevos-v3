@@ -45,6 +45,18 @@ export function flattenCatalog(): CatalogItem[] {
   );
 }
 
+// Stone photos for the swatch circles; finishes without a photo fall back to their hex
+const FINISH_PHOTOS = new Set([
+  'travertino-classic', 'green', 'red', 'perla', 'nero-greco', 'salomi', 'semi-white',
+  'maroko-sand', 'maroko-stoned', 'delino', 'foume', 'white',
+]);
+
+export function swatchBackground(finish: Finish): string {
+  return FINISH_PHOTOS.has(finish.id)
+    ? `${finish.hex} url(/assets/finishes/${finish.id}.jpg) center / cover`
+    : finish.hex;
+}
+
 export function getProduct(productId: string | undefined): Product {
   return PRODUCTS.find((p) => p.id === productId) ?? PRODUCTS[0];
 }

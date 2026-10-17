@@ -43,6 +43,7 @@
   overflow: hidden;
   position: relative;
   background: var(--surface);
+  border-radius: var(--radius);
 }
 
 .img {

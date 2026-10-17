@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { getCategory, getProduct, isCollage } from '../data/products';
+import { getCategory, getProduct, isCollage, swatchBackground } from '../data/products';
 import { useCart } from '../context/CartContext';
 import styles from './Product.module.css';
 
@@ -77,7 +77,7 @@ export default function Product() {
                 key={f.id}
                 className={styles.swatch}
                 style={{
-                  background: f.hex,
+                  background: swatchBackground(f),
                   border: i === selectedIndex ? '3px solid var(--tan)' : '3px solid transparent',
                 }}
                 title={t(`catalog.finishes.${f.id}`, { defaultValue: f.name })}

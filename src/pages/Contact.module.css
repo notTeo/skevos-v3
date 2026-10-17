@@ -116,7 +116,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
   width: fit-content;
 }
 

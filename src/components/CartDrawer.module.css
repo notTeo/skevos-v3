@@ -95,7 +95,7 @@
   font-weight: 700;
   cursor: pointer;
   border: none;
-  border-radius: 2px;
+  border-radius: var(--radius);
   font-family: inherit;
 }
 
@@ -115,7 +115,7 @@
   width: 64px;
   height: 64px;
   object-fit: cover;
-  border-radius: 2px;
+  border-radius: var(--radius);
   flex: none;
   background: var(--surface);
 }
@@ -188,7 +188,7 @@
   font-weight: 700;
   cursor: pointer;
   border: none;
-  border-radius: 2px;
+  border-radius: var(--radius);
   font-family: inherit;
 }
 

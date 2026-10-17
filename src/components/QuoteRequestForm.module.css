@@ -52,7 +52,7 @@
   font-weight: 700;
   cursor: pointer;
   border: none;
-  border-radius: 2px;
+  border-radius: var(--radius);
   font-family: inherit;
 }
 

@@ -52,7 +52,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 .secondaryBtn {
@@ -64,7 +64,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 .intro {
@@ -111,6 +111,7 @@
   aspect-ratio: 1;
   overflow: hidden;
   position: relative;
+  border-radius: var(--radius);
 }
 
 .gridImg {
@@ -207,7 +208,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 @media (max-width: 900px) {

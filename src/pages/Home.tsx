@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { flattenCatalog, FEATURED_INDICES } from '../data/products';
+import { flattenCatalog, FEATURED_INDICES, swatchBackground } from '../data/products';
 import styles from './Home.module.css';
 
 const CATALOG = flattenCatalog();
@@ -46,7 +46,7 @@ export default function Home() {
                 <img src={item.finish.img} className={styles.gridImg} alt={finishName} />
               </div>
               <div className={styles.gridLabel}>
-                <div className={styles.swatch} style={{ background: item.finish.hex }} />
+                <div className={styles.swatch} style={{ background: swatchBackground(item.finish) }} />
                 <div className={styles.gridName}>{finishName}</div>
               </div>
             </div>

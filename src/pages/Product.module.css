@@ -22,7 +22,7 @@
 }
 
 .imgWrap {
-  border-radius: 2px;
+  border-radius: var(--radius);
   overflow: hidden;
 }
 
@@ -43,7 +43,7 @@
   height: 72px;
   object-fit: cover;
   border: 2px solid transparent;
-  border-radius: 2px;
+  border-radius: var(--radius);
   cursor: pointer;
 }
 
@@ -114,7 +114,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 .secondaryBtn {
@@ -126,7 +126,7 @@
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 .specs {
@@ -172,6 +172,7 @@
   aspect-ratio: 1;
   overflow: hidden;
   position: relative;
+  border-radius: var(--radius);
 }
 
 .relatedImg {

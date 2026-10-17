@@ -50,6 +50,7 @@
   position: relative;
   background: var(--surface);
   cursor: pointer;
+  border-radius: var(--radius);
 }
 
 .img {
@@ -118,7 +119,7 @@
   letter-spacing: 1.2px;
   text-transform: uppercase;
   font-weight: 700;
-  border-radius: 2px;
+  border-radius: var(--radius);
 }
 
 .emptyBtn:hover {
