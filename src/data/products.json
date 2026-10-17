@@ -8,7 +8,7 @@
     {
       "id": "tableware",
       "name": "Tableware",
-      "image": "/assets/products/spoon-rest/spoon-travertino-classic.png"
+      "image": "/assets/products-3x2/spoon-rest/spoon-travertino-classic-angle.webp"
     },
     {
       "id": "furniture",
@@ -26,10 +26,9 @@
         {
           "id": "travertino-classic",
           "name": "Travertino Classic",
-          "img": "/assets/products/spoon-rest/spoon-travertino-classic.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-travertino-classic-angle.webp",
           "hex": "#CBB394",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-travertino-classic-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-travertino-classic-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-travertino-classic-top.webp"
           ]
@@ -37,10 +36,9 @@
         {
           "id": "travertino-choco",
           "name": "Travertino Choco",
-          "img": "/assets/products/spoon-rest/spoon-travertino-choco.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-travertino-choco-angle.webp",
           "hex": "#5A3D2E",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-travertino-choco-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-travertino-choco-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-travertino-choco-top.webp"
           ]
@@ -48,10 +46,9 @@
         {
           "id": "green",
           "name": "Green",
-          "img": "/assets/products/spoon-rest/spoon-green.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-green-angle.webp",
           "hex": "#3F6E58",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-green-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-green-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-green-top.webp"
           ]
@@ -59,10 +56,9 @@
         {
           "id": "red",
           "name": "Red",
-          "img": "/assets/products/spoon-rest/spoon-red.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-red-angle.webp",
           "hex": "#7A3B34",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-red-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-red-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-red-top.webp"
           ]
@@ -70,10 +66,9 @@
         {
           "id": "perla",
           "name": "Perla",
-          "img": "/assets/products/spoon-rest/spoon-perla.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-perla-angle.webp",
           "hex": "#D9D3C8",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-perla-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-perla-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-perla-top.webp"
           ]
@@ -81,10 +76,9 @@
         {
           "id": "nero-greco",
           "name": "Nero Greco",
-          "img": "/assets/products/spoon-rest/spoon-nero-greco.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-nero-greco-angle.webp",
           "hex": "#2B2B2B",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-nero-greco-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-nero-greco-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-nero-greco-top.webp"
           ]
@@ -92,10 +86,9 @@
         {
           "id": "salomi",
           "name": "Salomi",
-          "img": "/assets/products/spoon-rest/spoon-salomi.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-salomi-angle.webp",
           "hex": "#C9A876",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-salomi-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-salomi-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-salomi-top.webp"
           ]
@@ -103,10 +96,9 @@
         {
           "id": "semi-white",
           "name": "Semi White",
-          "img": "/assets/products/spoon-rest/spoon-semi-white.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-semi-white-angle.webp",
           "hex": "#E8E2D4",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-semi-white-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-semi-white-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-semi-white-top.webp"
           ]
@@ -114,10 +106,9 @@
         {
           "id": "rodiths",
           "name": "Rodiths",
-          "img": "/assets/products/spoon-rest/spoon-rodiths.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-rodiths-angle.webp",
           "hex": "#C98D7C",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-rodiths-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-rodiths-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-rodiths-top.webp"
           ]
@@ -125,10 +116,9 @@
         {
           "id": "maroko-sand",
           "name": "Maroko Sand",
-          "img": "/assets/products/spoon-rest/spoon-maroko-sand.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-maroko-sand-angle.webp",
           "hex": "#C7A577",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-maroko-sand-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-maroko-sand-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-maroko-sand-top.webp"
           ]
@@ -136,10 +126,9 @@
         {
           "id": "maroko-stoned",
           "name": "Maroko Stoned",
-          "img": "/assets/products/spoon-rest/spoon-maroko-stoned.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-maroko-stoned-angle.webp",
           "hex": "#8B8478",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-maroko-stoned-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-maroko-stoned-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-maroko-stoned-top.webp"
           ]
@@ -147,10 +136,9 @@
         {
           "id": "delino",
           "name": "Delino",
-          "img": "/assets/products/spoon-rest/spoon-delino.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-delino-angle.webp",
           "hex": "#CFC9BD",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-delino-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-delino-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-delino-top.webp"
           ]
@@ -158,10 +146,9 @@
         {
           "id": "foume",
           "name": "Foume",
-          "img": "/assets/products/spoon-rest/spoon-foume.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-foume-angle.webp",
           "hex": "#6E6A63",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-foume-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-foume-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-foume-top.webp"
           ]
@@ -169,10 +156,9 @@
         {
           "id": "white",
           "name": "White",
-          "img": "/assets/products/spoon-rest/spoon-white.png",
+          "img": "/assets/products-3x2/spoon-rest/spoon-white-angle.webp",
           "hex": "#F2EFE9",
           "gallery": [
-            "/assets/products-3x2/spoon-rest/spoon-white-angle.webp",
             "/assets/products-3x2/spoon-rest/spoon-white-side.webp",
             "/assets/products-3x2/spoon-rest/spoon-white-top.webp"
           ]

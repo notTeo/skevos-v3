@@ -62,11 +62,6 @@
   object-fit: cover;
 }
 
-.img.collage {
-  width: 200%;
-  height: 200%;
-}
-
 .cardFooter {
   padding: 16px 2px 0;
 }

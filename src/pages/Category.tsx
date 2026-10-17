@@ -1,7 +1,7 @@
 import { Link, Navigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { getCategory, getProductsByCategory, isCollage } from '../data/products';
+import { getCategory, getProductsByCategory } from '../data/products';
 import styles from './Category.module.css';
 
 export default function Category() {
@@ -40,7 +40,7 @@ export default function Category() {
             return (
               <Link key={product.id} to={`/product/${product.id}/0`} className={styles.card}>
                 <div className={styles.imgWrap}>
-                  <img src={product.finishes[0].img} className={`${styles.img} ${isCollage(product.finishes[0].img) ? styles.collage : ''}`} alt={productName} />
+                  <img src={product.finishes[0].img} className={styles.img} alt={productName} />
                 </div>
                 <div className={styles.cardFooter}>
                   <div className={styles.cardName}>{productName}</div>
