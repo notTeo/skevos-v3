@@ -54,6 +54,12 @@
   border: none;
   border-radius: var(--radius);
   font-family: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background: var(--tan);
+  color: #0F1F19;
 }
 
 .submitBtn:disabled {

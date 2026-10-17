@@ -53,6 +53,12 @@
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: var(--band-text);
+  color: #0F1F19;
 }
 
 .secondaryBtn {
@@ -65,6 +71,13 @@
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background: var(--sand);
+  border-color: var(--sand);
+  color: #0F1F19;
 }
 
 .intro {
@@ -177,6 +190,11 @@
   font-weight: 700;
   padding-bottom: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.storyLink:hover {
+  color: var(--tan);
 }
 
 .wholesale {
@@ -209,6 +227,12 @@
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.wholesaleBtn:hover {
+  background: var(--tan);
+  color: #0F1F19;
 }
 
 @media (max-width: 900px) {

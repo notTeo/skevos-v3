@@ -47,8 +47,8 @@ export function flattenCatalog(): CatalogItem[] {
 
 // Stone photos for the swatch circles; finishes without a photo fall back to their hex
 const FINISH_PHOTOS = new Set([
-  'travertino-classic', 'green', 'red', 'perla', 'nero-greco', 'salomi', 'semi-white',
-  'maroko-sand', 'maroko-stoned', 'delino', 'foume', 'white',
+  'travertino-classic', 'travertino-choco', 'green', 'red', 'perla', 'nero-greco', 'salomi',
+  'semi-white', 'rodiths', 'maroko-sand', 'maroko-stoned', 'delino', 'foume', 'white',
 ]);
 
 export function swatchBackground(finish: Finish): string {

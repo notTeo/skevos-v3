@@ -115,6 +115,12 @@
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.primaryBtn:hover {
+  background: var(--tan);
+  color: #0F1F19;
 }
 
 .secondaryBtn {
@@ -127,6 +133,13 @@
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.secondaryBtn:hover {
+  background: var(--forest);
+  border-color: var(--forest);
+  color: var(--cream);
 }
 
 .specs {

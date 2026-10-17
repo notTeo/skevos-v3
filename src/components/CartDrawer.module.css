@@ -55,6 +55,11 @@
   cursor: pointer;
   padding: 4px;
   display: flex;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.closeBtn:hover {
+  color: var(--tan);
 }
 
 .body {
@@ -97,6 +102,12 @@
   border: none;
   border-radius: var(--radius);
   font-family: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.browseBtn:hover {
+  background: var(--tan);
+  color: #0F1F19;
 }
 
 .list {
@@ -159,6 +170,11 @@
   cursor: pointer;
   display: flex;
   padding: 2px;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.stepper button:hover {
+  color: var(--tan);
 }
 
 .stepper span {
@@ -175,6 +191,11 @@
   cursor: pointer;
   padding: 4px;
   display: flex;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.removeBtn:hover {
+  color: var(--tan);
 }
 
 .offerBtn {
@@ -190,6 +211,12 @@
   border: none;
   border-radius: var(--radius);
   font-family: inherit;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.offerBtn:hover {
+  background: var(--tan);
+  color: #0F1F19;
 }
 
 .backLink {
@@ -203,6 +230,11 @@
   margin-bottom: 18px;
   font-family: inherit;
   align-self: flex-start;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+}
+
+.backLink:hover {
+  color: var(--tan);
 }
 
 @media (max-width: 600px) {
