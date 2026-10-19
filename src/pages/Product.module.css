@@ -93,7 +93,7 @@
 .swatch {
   width: 30px;
   height: 30px;
-  border-radius: 50%;
+  border-radius: var(--radius);
   cursor: pointer;
   box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
 }

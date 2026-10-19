@@ -33,6 +33,42 @@
   color: var(--forest);
 }
 
+.swatches {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 28px;
+}
+
+.swatch {
+  width: 34px;
+  height: 34px;
+  padding: 0;
+  border: 3px solid transparent;
+  border-radius: var(--radius);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1) inset;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.swatch:hover {
+  transform: translateY(-2px);
+}
+
+.swatchActive {
+  border-color: var(--tan);
+}
+
+.swatchName {
+  margin-top: 12px;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--taupe);
+}
+
 .card {
   display: block;
 }
