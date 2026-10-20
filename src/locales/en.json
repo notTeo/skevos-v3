@@ -256,6 +256,25 @@
       "blue-gray": "Blue Gray",
       "cool-grey": "Cool Grey",
       "dark-grey": "Dark Grey"
+    },
+    "finishInfo": {
+      "travertino-classic": "A light, warm beige travertine with soft bands running through it. Calm and natural, it suits both rustic and modern kitchens.",
+      "travertino-choco": "A rich brown travertine with layered bands of chocolate and taupe. Warm and earthy, with plenty of natural movement.",
+      "green": "A deep forest-green marble with darker clouds and fine light veins. Bold and striking, every piece looks different.",
+      "red": "A deep red marble crossed by bright white veins. Dramatic and full of character, it stands out on any table.",
+      "perla": "A soft ivory marble with faint golden veining. Gentle and elegant, it brings warmth without drawing attention.",
+      "nero-greco": "A black marble with fine white and gold veins. Elegant and dramatic, it makes light-coloured food stand out.",
+      "salomi": "A white marble with bold grey veins sweeping across it. Lively and graphic, with strong movement.",
+      "semi-white": "A soft white marble with cloudy grey veining. Light and calm, with a subtle play of tones.",
+      "rodiths": "An almost pure white marble with a very even, quiet surface. Clean and minimal.",
+      "maroko-sand": "A sandy beige stone with small natural pores and specks. Warm and textured, close to the feel of raw stone.",
+      "maroko-stoned": "A beige stone filled with pebble-like shapes in grey and cream. Full of texture, no two pieces alike.",
+      "delino": "A white marble with waves of golden beige. Soft and warm, with gentle flowing movement.",
+      "foume": "A grey marble with dark, smoky streaks. Moody and dynamic, with deep contrast.",
+      "white": "A pure white marble with only the faintest veining. Bright, clean and timeless.",
+      "blue-gray": "A grey marble with a cool blue undertone and soft veins. Calm and refined.",
+      "cool-grey": "A light, cool grey marble with misty veining. Understated and modern.",
+      "dark-grey": "A dark grey marble with lighter streaks running through it. Strong and contemporary."
     }
   }
 }

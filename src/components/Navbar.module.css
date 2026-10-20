@@ -124,7 +124,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 70vw;
+  width: 100%;
   height: 100%;
   height: 100dvh;
   background: var(--cream);
@@ -389,13 +389,6 @@
   .drawer:not(.drawerOpen) {
     display: none;
   }
-}
-
-/* narrow phones: the 70% drawer is ~224px, so trim the side padding */
-@media (max-width: 360px) {
-  .drawerHeader { padding-left: 20px; padding-right: 10px; }
-  .drawerNav,
-  .drawerFooter { padding-left: 20px; padding-right: 20px; }
 }
 
 /* short phones (iPhone SE): tighten spacing so the open accordion fits without scrolling */

@@ -1,22 +1,18 @@
+import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import { PRODUCTS, swatchBackground, type Finish } from '../data/products';
 import styles from './Materials.module.css';
 
-// every material in the catalog, in first-seen order, with how many pieces come in it
-const MATERIALS = [
-  ...PRODUCTS.flatMap((p) => p.finishes)
-    .reduce((map, f) => {
-      const entry = map.get(f.id);
-      if (entry) entry.count += 1;
-      else map.set(f.id, { finish: f, count: 1 });
-      return map;
-    }, new Map<string, { finish: Finish; count: number }>())
-    .values(),
+// every material in the catalog, once each, in first-seen order
+const MATERIALS: Finish[] = [
+  ...new Map(PRODUCTS.flatMap((p) => p.finishes).map((f) => [f.id, f])).values(),
 ];
 
 export default function Materials() {
   const { t } = useTranslation();
+  // tapped sample on touch screens; hover and keyboard focus are handled in CSS
+  const [active, setActive] = useState<string | null>(null);
 
   return (
     <div>
@@ -27,13 +23,27 @@ export default function Materials() {
       </div>
 
       <div className={styles.grid}>
-        {MATERIALS.map(({ finish, count }) => (
-          <div key={finish.id} className={styles.card}>
-            <div className={styles.swatch} style={{ background: swatchBackground(finish) }} />
-            <div className={styles.cardName}>{t(`catalog.finishes.${finish.id}`, { defaultValue: finish.name })}</div>
-            <div className={styles.cardMeta}>{t('products.pieceCount', { count })}</div>
-          </div>
-        ))}
+        {MATERIALS.map((finish) => {
+          const name = t(`catalog.finishes.${finish.id}`, { defaultValue: finish.name });
+          const isActive = active === finish.id;
+          return (
+            <div key={finish.id} className={`${styles.slot} ${isActive ? styles.active : ''}`}>
+              <button
+                type="button"
+                className={styles.sample}
+                style={{ background: swatchBackground(finish) }}
+                aria-label={name}
+                aria-expanded={isActive}
+                onClick={() => setActive(isActive ? null : finish.id)}
+              />
+              <div className={styles.name}>{name}</div>
+              <div className={styles.card} role="tooltip">
+                <div className={styles.cardName}>{name}</div>
+                <p className={styles.cardInfo}>{t(`catalog.finishInfo.${finish.id}`)}</p>
+              </div>
+            </div>
+          );
+        })}
       </div>
 
       <Footer topPadding="0" />
