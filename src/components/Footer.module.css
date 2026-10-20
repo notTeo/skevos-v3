@@ -1,39 +1,95 @@
 .wrap {
-  padding: 56px 72px 0;
+  margin-top: 56px;
+  padding: 72px 72px 0;
+  /* quarry photo under a soft neutral shade, so the text stays readable */
+  background:
+    linear-gradient(rgba(26, 23, 20, 0.5), rgba(26, 23, 20, 0.72)),
+    #2A2622 url(/assets/quarry/quarry-blocks.webp) center 25% / cover no-repeat;
+  color: #EAE1D2;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.55);
 }
 
-.inner {
-  border-top: 1px solid var(--line);
-  padding: 36px 0 40px;
+.columns {
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1.3fr;
+  gap: 40px;
+  padding-bottom: 56px;
+}
+
+.logo {
+  display: block;
+  height: 32px;
+  width: auto;
+}
+
+.tagline {
+  max-width: 260px;
+  margin: 18px 0 0;
+  font-size: 14px;
+  line-height: 1.7;
+  color: #E4DBCD;
+}
+
+.col {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.colTitle {
+  margin-bottom: 10px;
   font-size: 12px;
-  color: var(--taupe);
-}
-
-.social {
-  display: flex;
-  gap: 20px;
+  letter-spacing: 2.5px;
   text-transform: uppercase;
-  letter-spacing: 1px;
+  font-weight: 700;
+  color: #E6CFB6;
 }
 
-.socialLink {
-  display: flex;
+.link,
+.plain {
+  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  color: inherit;
+  gap: 8px;
+  min-height: 32px;
+  font-size: 15px;
+  color: #FAF6EE;
+  text-decoration: none;
+}
+
+.link {
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: var(--tan);
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--tan);
+  outline-offset: 2px;
+}
+
+.plain {
+  color: #E4DBCD;
+}
+
+.bottom {
+  border-top: 1px solid rgba(250, 246, 238, 0.14);
+  padding: 24px 0 28px;
+  font-size: 13px;
+  color: #D9CFC0;
+}
+
+@media (max-width: 900px) {
+  .wrap { padding: 56px 40px 0; }
+  .columns { grid-template-columns: 1fr 1fr; gap: 40px 24px; }
+  .brand { grid-column: 1 / -1; }
 }
 
 @media (max-width: 600px) {
-  .wrap {
-    padding: 40px 20px 0;
-  }
-  .inner {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 14px;
-    padding: 28px 0 32px;
-  }
+  .wrap { padding: 48px 20px 0; }
+  .columns { gap: 32px 16px; padding-bottom: 40px; }
+  .link, .plain { min-height: 40px; font-size: 14px; }
+  .col:last-child { grid-column: 1 / -1; }
 }

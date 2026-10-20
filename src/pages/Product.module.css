@@ -95,23 +95,25 @@
 }
 
 .actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 14px;
-  margin-bottom: 36px;
+  margin-bottom: 16px;
 }
 
 .primaryBtn {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  border: 0;
   background: var(--forest);
   color: var(--cream);
-  padding: 16px 32px;
-  font-size: 13px;
+  padding: 18px 32px;
+  font: inherit;
+  font-size: 14px;
   letter-spacing: 1.5px;
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
   border-radius: var(--radius);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 .primaryBtn:hover {
@@ -119,23 +121,28 @@
   color: #0F1F19;
 }
 
-.secondaryBtn {
-  border: 1.5px solid var(--taupe);
-  color: var(--forest);
-  padding: 16px 26px;
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  cursor: pointer;
-  border-radius: var(--radius);
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+.primaryBtn:focus-visible {
+  outline: 2px solid var(--tan);
+  outline-offset: 3px;
 }
 
-.secondaryBtn:hover {
-  background: var(--forest);
-  border-color: var(--forest);
-  color: var(--cream);
+.contactLine {
+  margin: 0 0 36px;
+  font-size: 14px;
+  color: var(--body-text);
+}
+
+.contactLink {
+  margin-left: 6px;
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--tan);
+  padding: 4px 0 2px;
+}
+
+.contactLink:hover {
+  color: var(--tan);
 }
 
 .specs {
@@ -166,7 +173,15 @@
   .layout { padding: 16px 20px 48px; gap: 24px; }
   .title { font-size: 26px; }
   .specs { grid-template-columns: 1fr; gap: 14px; }
-  .actions { flex-direction: column; }
+  /* the main button stays in reach while the photos are on screen */
+  .actions {
+    position: sticky;
+    bottom: 0;
+    z-index: 5;
+    margin: 0 -20px 12px;
+    padding: 12px 20px calc(12px + env(safe-area-inset-bottom));
+    background: var(--cream);
+  }
   .thumb { width: 56px; height: 56px; }
-  .primaryBtn, .secondaryBtn { width: 100%; text-align: center; }
+  .primaryBtn { max-width: none; }
 }

@@ -18,8 +18,13 @@
     "emailLabel": "Email {{email}}"
   },
   "footer": {
-    "copyright": "© Skevos. Elegant marble utensils, made in Greece.",
-    "instagram": "Instagram"
+    "copyright": "© {{year}} Skevos. All rights reserved.",
+    "instagram": "Instagram",
+    "tagline": "Elegant marble utensils and objects, handcut in Greece.",
+    "shop": "Shop",
+    "company": "Company",
+    "getInTouch": "Get in touch",
+    "madeIn": "Workshop in Greece"
   },
   "home": {
     "eyebrow": "Handcut Greek Marble",
@@ -28,16 +33,13 @@
     "heroTitleLine3": "the home.",
     "heroDesc": "Marble furniture and objects carved from solid Greek stone — one material, fourteen natural finishes, no two pieces quite alike.",
     "shopCollection": "Shop the collection",
-    "ourStory": "Our story",
     "introEyebrow": "One material, many forms",
     "introTitle": "Every stone tells a different story",
-    "introDesc": "From warm travertino to deep forest green, each piece is cut from natural marble — veining and tone vary piece to piece.",
-    "storyEyebrow": "From quarry to craft",
-    "storyTitle": "Cut, shaped and polished in Greece",
-    "storyLink": "Read our story →",
-    "wholesaleTitle": "Buying for a hotel, restaurant or store?",
-    "wholesaleDesc": "We work with trade partners across sizes — ask about wholesale pricing and lead times.",
-    "wholesaleBtn": "Wholesale inquiries"
+    "categoriesTitle": "Shop by category",
+    "viewAll": "View all",
+    "materialsTitle": "{{count}} natural stones",
+    "materialsLink": "Explore materials",
+    "requestPricing": "Request pricing"
   },
   "products": {
     "eyebrow": "The collection",
@@ -60,13 +62,19 @@
   "materials": {
     "eyebrow": "Natural stone",
     "title": "Our Materials",
-    "desc": "Every marble and stone we work with. Each slab is unique, so veining and tone vary from piece to piece."
+    "desc": "Every marble and stone we work with. Each slab is unique, so veining and tone vary from piece to piece.",
+    "all": "All",
+    "filterLabel": "Filter by colour",
+    "tones": {
+      "light": "Whites",
+      "warm": "Warm & beige",
+      "grey": "Greys & browns",
+      "bold": "Bold & dark"
+    }
   },
   "product": {
     "breadcrumbProducts": "Products",
     "chooseAFinish": "Choose a finish",
-    "requestPricing": "Request pricing",
-    "askAboutWholesale": "Ask about wholesale",
     "addToCart": "Add to cart",
     "addedToCart": "Added",
     "specs": {
@@ -78,7 +86,9 @@
       "careValue": "Hand wash, dry immediately",
       "originLabel": "Origin",
       "originValue": "Made in Greece"
-    }
+    },
+    "contactPrompt": "Need pricing or wholesale?",
+    "contactLink": "Contact us"
   },
   "about": {
     "heroTitle": "Our Story",

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { useNavigate, useParams } from 'react-router-dom';
+import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import { getCategory, getProduct, swatchBackground } from '../data/products';
@@ -83,7 +83,8 @@ export default function Product() {
           </div>
 
           <div className={styles.actions}>
-            <div
+            <button
+              type="button"
               className={styles.primaryBtn}
               onClick={() => {
                 addItem(product.id, selectedIndex);
@@ -91,10 +92,12 @@ export default function Product() {
               }}
             >
               {t('product.addToCart')}
-            </div>
-            <div className={styles.secondaryBtn} onClick={() => navigate('/contact')}>{t('product.requestPricing')}</div>
-            <div className={styles.secondaryBtn} onClick={() => navigate('/contact')}>{t('product.askAboutWholesale')}</div>
+            </button>
           </div>
+          <p className={styles.contactLine}>
+            {t('product.contactPrompt')}{' '}
+            <Link to="/contact" className={styles.contactLink}>{t('product.contactLink')} →</Link>
+          </p>
 
           <div className={styles.specs}>
             <div><div className={styles.specLabel}>{t('product.specs.materialLabel')}</div>{t('product.specs.materialValue')}</div>

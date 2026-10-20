@@ -1,51 +1,88 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
+import { Link, useLocation, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
-import { PRODUCTS, swatchBackground, type Finish } from '../data/products';
+import {
+  MATERIALS, TONES, categoriesForMaterial, materialTone, swatchBackground, type Tone,
+} from '../data/products';
 import styles from './Materials.module.css';
-
-// every material in the catalog, once each, in first-seen order
-const MATERIALS: Finish[] = [
-  ...new Map(PRODUCTS.flatMap((p) => p.finishes).map((f) => [f.id, f])).values(),
-];
 
 export default function Materials() {
   const { t } = useTranslation();
-  // tapped sample on touch screens; hover and keyboard focus are handled in CSS
-  const [active, setActive] = useState<string | null>(null);
+  const { hash } = useLocation();
+  const [searchParams, setSearchParams] = useSearchParams();
+  const toneParam = searchParams.get('tone');
+  const selected = TONES.find((tone) => tone === toneParam) ?? null;
+  const groups = (selected ? [selected] : TONES).map((tone) => ({
+    tone,
+    items: MATERIALS.filter((f) => materialTone(f) === tone),
+  }));
+
+  // links from the home page point at one stone, e.g. /materials#green
+  useEffect(() => {
+    if (hash) document.getElementById(hash.slice(1))?.scrollIntoView({ block: 'center' });
+  }, [hash]);
+
+  const selectTone = (tone: Tone | null) => {
+    setSearchParams(tone ? { tone } : {}, { replace: true });
+  };
 
   return (
     <div>
       <div className={styles.header}>
         <div className={styles.eyebrow}>{t('materials.eyebrow')}</div>
-        <div className={styles.title}>{t('materials.title')}</div>
-        <div className={styles.desc}>{t('materials.desc')}</div>
+        <h1 className={styles.title}>{t('materials.title')}</h1>
+        <p className={styles.desc}>{t('materials.desc')}</p>
       </div>
 
-      <div className={styles.grid}>
-        {MATERIALS.map((finish) => {
-          const name = t(`catalog.finishes.${finish.id}`, { defaultValue: finish.name });
-          const isActive = active === finish.id;
-          return (
-            <div key={finish.id} className={`${styles.slot} ${isActive ? styles.active : ''}`}>
-              <button
-                type="button"
-                className={styles.sample}
-                style={{ background: swatchBackground(finish) }}
-                aria-label={name}
-                aria-expanded={isActive}
-                onClick={() => setActive(isActive ? null : finish.id)}
-              />
-              <div className={styles.name}>{name}</div>
-              <div className={styles.card} role="tooltip">
-                <div className={styles.cardName}>{name}</div>
-                <p className={styles.cardInfo}>{t(`catalog.finishInfo.${finish.id}`)}</p>
-              </div>
-            </div>
-          );
-        })}
+      <div className={styles.chipsBar}>
+        <div className={styles.chips} role="group" aria-label={t('materials.filterLabel')}>
+          <button type="button" className={styles.chip} aria-pressed={!selected} onClick={() => selectTone(null)}>
+            {t('materials.all')} <span className={styles.chipCount}>{MATERIALS.length}</span>
+          </button>
+          {TONES.map((tone) => (
+            <button
+              key={tone}
+              type="button"
+              className={styles.chip}
+              aria-pressed={selected === tone}
+              onClick={() => selectTone(selected === tone ? null : tone)}
+            >
+              {t(`materials.tones.${tone}`)}{' '}
+              <span className={styles.chipCount}>{MATERIALS.filter((f) => materialTone(f) === tone).length}</span>
+            </button>
+          ))}
+        </div>
       </div>
 
+      {groups.map(({ tone, items }) => (
+        <section key={tone} className={styles.group}>
+          <h2 className={styles.groupTitle}>{t(`materials.tones.${tone}`)}</h2>
+          <div className={styles.grid}>
+            {items.map((finish) => {
+              const name = t(`catalog.finishes.${finish.id}`, { defaultValue: finish.name });
+              return (
+                <article key={finish.id} id={finish.id} className={styles.card}>
+                  <div className={styles.sample} style={{ background: swatchBackground(finish) }} role="img" aria-label={name} />
+                  <div className={styles.body}>
+                    <h3 className={styles.name}>{name}</h3>
+                    <p className={styles.info}>{t(`catalog.finishInfo.${finish.id}`)}</p>
+                    <div className={styles.shop}>
+                      {categoriesForMaterial(finish.id).map((c) => (
+                        <Link key={c.id} to={`/products/${c.id}?finish=${finish.id}`} className={styles.shopLink}>
+                          {t(`products.categories.${c.id}`, { defaultValue: c.name })} →
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                </article>
+              );
+            })}
+          </div>
+        </section>
+      ))}
+
+      <div className={styles.end} />
       <Footer topPadding="0" />
     </div>
   );

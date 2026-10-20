@@ -70,4 +70,43 @@ export function getProductsByCategory(categoryId: string): Product[] {
   return PRODUCTS.filter((p) => p.category === categoryId);
 }
 
-export const FEATURED_INDICES = [0, 2, 3, 5, 8, 11];
+// home page picks: one piece per product so the row shows the range, [productId, finish]
+const FEATURED: [string, string][] = [
+  ['tray-handles', 'perla'], ['candlestick-tapered', 'green'], ['bowl-small', 'travertino-choco'],
+  ['platter-oval', 'nero-greco'], ['candlestick-block', 'red'], ['board-round', 'travertino-classic'],
+];
+
+export function getFeaturedItems(): CatalogItem[] {
+  const catalog = flattenCatalog();
+  return FEATURED.flatMap(([productId, finishId]) =>
+    catalog.filter((item) => item.productId === productId && item.finish.id === finishId)
+  );
+}
+
+// every material in the catalog, once each, in first-seen order
+export const MATERIALS: Finish[] = [
+  ...new Map(PRODUCTS.flatMap((p) => p.finishes).map((f) => [f.id, f])).values(),
+];
+
+// colour families used to group the materials page
+export const TONES = ['light', 'warm', 'grey', 'bold'] as const;
+export type Tone = (typeof TONES)[number];
+
+const MATERIAL_TONES: Record<string, Tone> = {
+  white: 'light', 'semi-white': 'light', perla: 'light', delino: 'light',
+  'travertino-classic': 'warm', salomi: 'warm', 'maroko-sand': 'warm', rodiths: 'warm',
+  'cool-grey': 'warm', 'blue-gray': 'warm',
+  'maroko-stoned': 'grey', foume: 'grey', 'dark-grey': 'grey', 'travertino-choco': 'grey',
+  green: 'bold', red: 'bold', 'nero-greco': 'bold',
+};
+
+export function materialTone(finish: Finish): Tone {
+  return MATERIAL_TONES[finish.id] ?? 'warm';
+}
+
+// categories that have at least one piece in this material
+export function categoriesForMaterial(finishId: string): Category[] {
+  return CATEGORIES.filter((c) =>
+    getProductsByCategory(c.id).some((p) => p.finishes.some((f) => f.id === finishId))
+  );
+}
