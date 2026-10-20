@@ -21,14 +21,10 @@
   align-items: start;
 }
 
-.imgWrap {
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
 .img {
   width: 100%;
   display: block;
+  border-radius: var(--radius);
 }
 
 .thumbs {

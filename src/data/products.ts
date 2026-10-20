@@ -49,6 +49,7 @@ export function flattenCatalog(): CatalogItem[] {
 const FINISH_PHOTOS = new Set([
   'travertino-classic', 'travertino-choco', 'green', 'red', 'perla', 'nero-greco', 'salomi',
   'semi-white', 'rodiths', 'maroko-sand', 'maroko-stoned', 'delino', 'foume', 'white',
+  'cool-grey', 'blue-gray', 'dark-grey',
 ]);
 
 export function swatchBackground(finish: Finish): string {

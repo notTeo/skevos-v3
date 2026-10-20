@@ -43,7 +43,7 @@ export default function Product() {
       </div>
 
       <div className={styles.layout}>
-        <div className={styles.imgWrap}>
+        <div>
           <img src={views[viewIndex] ?? current.img} className={styles.img} alt={currentFinishName} />
           {views.length > 1 && (
             <div className={styles.thumbs}>
