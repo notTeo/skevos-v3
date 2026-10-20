@@ -247,21 +247,19 @@
 
 /* ---------- materials strip ---------- */
 
-/* scrolls by itself (see Home.tsx); wheel, trackpad and swipe move it too */
+/* slides by itself (see Home.tsx); wheel, trackpad and swipe move it too */
 .strip {
   margin: 0 -72px;
-  overflow-x: auto;
-  overscroll-behavior-x: contain;
-  scrollbar-width: none;
+  overflow: hidden;
+  touch-action: pan-y; /* vertical swipes still scroll the page */
   mask-image: linear-gradient(to right, transparent, #000 6%, #000 94%, transparent);
 }
-
-.strip::-webkit-scrollbar { display: none; }
 
 .track {
   display: flex;
   width: max-content;
   padding: 8px 0 12px;
+  will-change: transform;
 }
 
 .stripItem {

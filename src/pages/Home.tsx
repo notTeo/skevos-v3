@@ -8,36 +8,42 @@ import {
 import styles from './Home.module.css';
 
 const FEATURED_ITEMS = getFeaturedItems();
-const STRIP_SPEED = 18; // px per second
+const STRIP_SPEED = 40; // px per second
 
-// Auto-scrolls the stone strip in an endless loop. Pauses while hovered, focused or touched;
-// the mouse wheel scrolls it sideways. Its content is rendered twice, so jumping back by half
-// its width is invisible.
-function useAutoScroll(ref: React.RefObject<HTMLDivElement | null>) {
+// Slides the stone strip in an endless loop with a sub-pixel transform, so it glides
+// instead of stepping pixel by pixel. Pauses while hovered, focused or touched; the
+// wheel, trackpad and a sideways drag move it with a little easing. The content is
+// rendered twice, so wrapping back by half its width is invisible.
+function useAutoScroll(stripRef: React.RefObject<HTMLDivElement | null>, trackRef: React.RefObject<HTMLDivElement | null>) {
   useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
+    const strip = stripRef.current;
+    const track = trackRef.current;
+    if (!strip || !track) return;
     const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    let pos = el.scrollLeft;
+    let pos = 0;
+    let pending = 0; // wheel distance still to glide through
+    let speed = reduceMotion ? 0 : STRIP_SPEED; // eases to 0 while paused, back up after
     let paused = false;
     let resumeTimer = 0;
     let last = performance.now();
     let frame = 0;
+    let dragX: number | null = null;
+    let dragged = 0;
 
-    const wrap = () => {
-      const half = el.scrollWidth / 2;
-      if (el.scrollLeft >= half) el.scrollLeft -= half;
-      else if (el.scrollLeft <= 0) el.scrollLeft += half;
-      pos = el.scrollLeft;
+    const render = () => {
+      const half = track.scrollWidth / 2;
+      pos = ((pos % half) + half) % half;
+      track.style.transform = `translate3d(${-pos}px, 0, 0)`;
     };
     const tick = (now: number) => {
       const dt = Math.min(now - last, 100) / 1000;
       last = now;
-      if (!paused && !reduceMotion) {
-        pos += STRIP_SPEED * dt;
-        if (pos >= el.scrollWidth / 2) pos -= el.scrollWidth / 2;
-        el.scrollLeft = pos;
-      }
+      const target = paused || reduceMotion ? 0 : STRIP_SPEED;
+      speed += (target - speed) * Math.min(1, dt * 4);
+      const glide = pending * Math.min(1, dt * 10);
+      pending -= glide;
+      pos += speed * dt + glide;
+      render();
       frame = requestAnimationFrame(tick);
     };
     const pause = () => { paused = true; clearTimeout(resumeTimer); };
@@ -45,50 +51,69 @@ function useAutoScroll(ref: React.RefObject<HTMLDivElement | null>) {
       clearTimeout(resumeTimer);
       resumeTimer = window.setTimeout(() => { paused = false; }, ms);
     };
-    const onScroll = () => {
-      // keep our position in sync when the visitor scrolled it themselves
-      if (Math.abs(el.scrollLeft - pos) > 1) wrap();
-    };
+
     const onWheel = (e: WheelEvent) => {
-      // trackpads already scroll sideways; turn a plain vertical wheel into sideways movement
-      if (Math.abs(e.deltaY) > Math.abs(e.deltaX)) {
-        e.preventDefault();
-        el.scrollLeft += e.deltaY;
-      }
+      e.preventDefault();
+      pending += Math.abs(e.deltaX) > Math.abs(e.deltaY) ? e.deltaX : e.deltaY;
     };
     const onLeave = () => resumeLater(0);
-    const onTouchEnd = () => resumeLater(2500);
+    const onPointerDown = (e: PointerEvent) => {
+      if (e.pointerType === 'mouse') return;
+      pause();
+      dragX = e.clientX;
+      dragged = 0;
+    };
+    const onPointerMove = (e: PointerEvent) => {
+      if (dragX === null) return;
+      const dx = e.clientX - dragX;
+      dragX = e.clientX;
+      dragged += Math.abs(dx);
+      pos -= dx;
+      render();
+    };
+    const onPointerUp = () => {
+      if (dragX === null) return;
+      dragX = null;
+      resumeLater(2500);
+    };
+    // a swipe shouldn't open the stone it started on
+    const onClick = (e: MouseEvent) => {
+      if (dragged > 6) { e.preventDefault(); dragged = 0; }
+    };
 
-    el.scrollLeft = 1;
-    pos = 1;
     frame = requestAnimationFrame(tick);
-    el.addEventListener('scroll', onScroll, { passive: true });
-    el.addEventListener('wheel', onWheel, { passive: false });
-    el.addEventListener('mouseenter', pause);
-    el.addEventListener('mouseleave', onLeave);
-    el.addEventListener('focusin', pause);
-    el.addEventListener('focusout', onLeave);
-    el.addEventListener('touchstart', pause, { passive: true });
-    el.addEventListener('touchend', onTouchEnd);
+    strip.addEventListener('wheel', onWheel, { passive: false });
+    strip.addEventListener('mouseenter', pause);
+    strip.addEventListener('mouseleave', onLeave);
+    strip.addEventListener('focusin', pause);
+    strip.addEventListener('focusout', onLeave);
+    strip.addEventListener('pointerdown', onPointerDown);
+    window.addEventListener('pointermove', onPointerMove);
+    window.addEventListener('pointerup', onPointerUp);
+    window.addEventListener('pointercancel', onPointerUp);
+    strip.addEventListener('click', onClick, true);
     return () => {
       cancelAnimationFrame(frame);
       clearTimeout(resumeTimer);
-      el.removeEventListener('scroll', onScroll);
-      el.removeEventListener('wheel', onWheel);
-      el.removeEventListener('mouseenter', pause);
-      el.removeEventListener('mouseleave', onLeave);
-      el.removeEventListener('focusin', pause);
-      el.removeEventListener('focusout', onLeave);
-      el.removeEventListener('touchstart', pause);
-      el.removeEventListener('touchend', onTouchEnd);
+      strip.removeEventListener('wheel', onWheel);
+      strip.removeEventListener('mouseenter', pause);
+      strip.removeEventListener('mouseleave', onLeave);
+      strip.removeEventListener('focusin', pause);
+      strip.removeEventListener('focusout', onLeave);
+      strip.removeEventListener('pointerdown', onPointerDown);
+      window.removeEventListener('pointermove', onPointerMove);
+      window.removeEventListener('pointerup', onPointerUp);
+      window.removeEventListener('pointercancel', onPointerUp);
+      strip.removeEventListener('click', onClick, true);
     };
-  }, [ref]);
+  }, [stripRef, trackRef]);
 }
 
 export default function Home() {
   const { t } = useTranslation();
   const stripRef = useRef<HTMLDivElement>(null);
-  useAutoScroll(stripRef);
+  const trackRef = useRef<HTMLDivElement>(null);
+  useAutoScroll(stripRef, trackRef);
   // only categories that already have pieces
   const categories = CATEGORIES.filter((c) => c.image && getProductsByCategory(c.id).length > 0);
 
@@ -172,7 +197,7 @@ export default function Home() {
         </div>
         {/* the list is rendered twice so the loop wraps seamlessly */}
         <div className={styles.strip} ref={stripRef}>
-          <div className={styles.track}>
+          <div className={styles.track} ref={trackRef}>
             {[...MATERIALS, ...MATERIALS].map((finish, i) => {
               const name = t(`catalog.finishes.${finish.id}`, { defaultValue: finish.name });
               const copy = i >= MATERIALS.length;
