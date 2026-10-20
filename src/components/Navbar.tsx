@@ -5,12 +5,16 @@ import { ArrowRight, Camera, ChevronDown, Mail, Menu, X } from 'lucide-react';
 import LanguageToggle from './LanguageToggle';
 import ThemeToggle from './ThemeToggle';
 import CartButton from './CartButton';
+import { THEME_SWITCHING_ENABLED } from '../context/ThemeContext';
 import { CATEGORIES } from '../data/products';
 import styles from './Navbar.module.css';
 
 const LOGO_SRC = '/assets/logo/skevos-wordmark.png';
 
 const stagger = (i: number) => ({ '--i': i }) as CSSProperties;
+
+// "Home Objects" → "Home objects": the drawer's sub-links read as sentence case in both languages
+const sentenceCase = (s: string) => s.charAt(0).toUpperCase() + s.slice(1).toLowerCase();
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -27,9 +31,6 @@ export default function Navbar() {
 
   const productsActive = pathname.startsWith('/products') || pathname.startsWith('/product/');
   const productsClass = productsActive ? `${styles.link} ${styles.linkActive}` : styles.link;
-
-  const drawerLinkClass = ({ isActive }: { isActive: boolean }) =>
-    isActive ? `${styles.drawerLink} ${styles.drawerLinkActive}` : styles.drawerLink;
 
   const close = () => setOpen(false);
 
@@ -84,10 +85,11 @@ export default function Navbar() {
       <div className={`${styles.right} ${styles.bar}`}>
         <div className={styles.links}>
           <NavLink to="/products" className={productsClass}>{t('navbar.products')}</NavLink>
+          <NavLink to="/materials" className={linkClass}>{t('navbar.materials')}</NavLink>
           <NavLink to="/about" className={linkClass}>{t('navbar.about')}</NavLink>
         </div>
         <LanguageToggle />
-        <ThemeToggle />
+        {THEME_SWITCHING_ENABLED && <ThemeToggle />}
         <CartButton />
         <NavLink to="/contact" className={styles.contact}>{t('navbar.contact')}</NavLink>
       </div>
@@ -139,14 +141,14 @@ export default function Navbar() {
         <nav className={styles.drawerNav}>
           <div className={styles.drawerItem} style={stagger(0)}>
             <div className={styles.drawerRow}>
-              <NavLink
+              <Link
                 to="/products"
-                end
-                className={productsActive ? `${styles.drawerLink} ${styles.drawerLinkActive}` : styles.drawerLink}
+                className={styles.drawerLink}
+                aria-current={productsActive ? 'true' : undefined}
                 onClick={close}
               >
                 {t('navbar.products')}
-              </NavLink>
+              </Link>
               <button
                 type="button"
                 className={showCategories ? `${styles.expandBtn} ${styles.expandBtnOpen}` : styles.expandBtn}
@@ -155,7 +157,7 @@ export default function Navbar() {
                 aria-controls="drawer-categories"
                 onClick={() => setShowCategories((v) => !v)}
               >
-                <ChevronDown size={20} strokeWidth={1.75} />
+                <ChevronDown size={22} strokeWidth={1.75} />
               </button>
             </div>
             <div
@@ -164,50 +166,48 @@ export default function Navbar() {
               inert={!showCategories}
             >
               <div className={styles.subLinksInner}>
+                <NavLink to="/products" end className={styles.subLink} onClick={close}>
+                  {sentenceCase(t('navbar.allProducts'))}
+                </NavLink>
                 {CATEGORIES.map((category) => (
-                  <NavLink
-                    key={category.id}
-                    to={`/products/${category.id}`}
-                    className={({ isActive }) => (isActive ? `${styles.subLink} ${styles.subLinkActive}` : styles.subLink)}
-                    onClick={close}
-                  >
-                    {t(`products.categories.${category.id}`, { defaultValue: category.name })}
+                  <NavLink key={category.id} to={`/products/${category.id}`} className={styles.subLink} onClick={close}>
+                    {sentenceCase(t(`products.categories.${category.id}`, { defaultValue: category.name }))}
                   </NavLink>
                 ))}
               </div>
             </div>
           </div>
           <div className={styles.drawerItem} style={stagger(1)}>
-            <NavLink to="/about" className={drawerLinkClass} onClick={close}>{t('navbar.about')}</NavLink>
+            <NavLink to="/materials" className={styles.drawerLink} onClick={close}>{t('navbar.materials')}</NavLink>
+          </div>
+          <div className={styles.drawerItem} style={stagger(2)}>
+            <NavLink to="/about" className={styles.drawerLink} onClick={close}>{t('navbar.about')}</NavLink>
           </div>
         </nav>
 
-        <div className={styles.drawerFooter} style={stagger(2)}>
+        <div className={styles.drawerFooter} style={stagger(3)}>
           <NavLink to="/contact" className={styles.drawerContact} onClick={close}>
             {t('navbar.contact')}
             <ArrowRight size={16} strokeWidth={2} />
           </NavLink>
 
-          <div className={styles.prefs}>
-            <div className={styles.prefRow}>
-              <span className={styles.prefLabel}>{t('navbar.language')}</span>
-              <LanguageToggle />
-            </div>
-            <div className={styles.prefRow}>
-              <span className={styles.prefLabel}>{t('navbar.theme')}</span>
-              <ThemeToggle className={styles.prefToggle} />
-            </div>
-          </div>
-
           <div className={styles.drawerMeta}>
-            <a href="#" className={styles.metaLink}>
-              <Camera size={15} strokeWidth={1.75} />
-              {t('footer.instagram')}
-            </a>
-            <a href={`mailto:${t('contact.panelEmailValue')}`} className={styles.metaLink}>
-              <Mail size={15} strokeWidth={1.75} />
-              {t('contact.panelEmailValue')}
-            </a>
+            <div className={styles.social}>
+              <a href="#" className={styles.iconLink} aria-label={t('footer.instagram')}>
+                <Camera size={20} strokeWidth={1.75} aria-hidden="true" />
+              </a>
+              <a
+                href={`mailto:${t('contact.panelEmailValue')}`}
+                className={styles.iconLink}
+                aria-label={t('navbar.emailLabel', { email: t('contact.panelEmailValue') })}
+              >
+                <Mail size={20} strokeWidth={1.75} aria-hidden="true" />
+              </a>
+            </div>
+            <div className={styles.prefs}>
+              {THEME_SWITCHING_ENABLED && <ThemeToggle className={styles.prefToggle} />}
+              <LanguageToggle className={styles.drawerLang} />
+            </div>
           </div>
         </div>
       </div>

@@ -26,6 +26,8 @@
   --forest: #21473C;
   --tan: #C09C7C;
   --taupe: #9A876E;
+  /* secondary text that still passes WCAG AA (4.9:1) on cream */
+  --muted: #736A5D;
   --sand: #CBB394;
   --body-text: #4a453e;
   --line: rgba(15, 31, 25, 0.12);
@@ -45,6 +47,7 @@
   --ink: #EFE7D8;
   --forest: #EFE7D8;
   --taupe: #A99A82;
+  --muted: #A99A82;
   --body-text: #C9C0B0;
   --line: rgba(250, 246, 238, 0.14);
   --surface: #17302A;

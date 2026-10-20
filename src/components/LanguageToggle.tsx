@@ -20,7 +20,7 @@ export default function LanguageToggle({ className }: { className?: string }) {
       >
         EN
       </button>
-      <span className={styles.divider}>/</span>
+      <span className={styles.divider} aria-hidden="true">|</span>
       <button
         type="button"
         className={i18n.language === 'el' ? `${styles.option} ${styles.optionActive}` : styles.option}

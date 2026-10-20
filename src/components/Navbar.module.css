@@ -124,9 +124,9 @@
   position: fixed;
   top: 0;
   right: 0;
+  width: 70vw;
   height: 100%;
   height: 100dvh;
-  width: min(88vw, 380px);
   background: var(--cream);
   transform: translateX(100%);
   visibility: hidden;
@@ -134,6 +134,7 @@
   z-index: 70;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
   overflow-y: auto;
   overscroll-behavior: contain;
   padding-bottom: env(safe-area-inset-bottom);
@@ -150,7 +151,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 16px 20px 16px 24px;
+  padding: 16px 14px 16px 24px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -166,22 +167,23 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border-radius: 50%;
   background: none;
-  border: 1px solid var(--line);
+  border: none;
   color: var(--forest);
   cursor: pointer;
   padding: 0;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
+  transition: opacity 0.2s ease;
 }
 
 .closeBtn:hover {
-  border-color: var(--tan);
-  color: var(--tan);
+  opacity: 0.7;
 }
 
 .drawerNav {
-  padding: 8px 24px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 28px 24px 0;
 }
 
 /* items slide in one after another once the drawer is open */
@@ -200,28 +202,33 @@
   transition-delay: calc(0.12s + var(--i, 0) * 0.06s);
 }
 
-.drawerItem {
-  border-bottom: 1px solid var(--line);
-}
-
 .drawerRow {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .drawerLink {
-  flex: 1;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  min-height: 68px;
+  gap: 12px;
+  min-height: 48px;
   font-family: 'Elsie Black', serif;
-  font-size: 30px;
+  /* 36px, shrinking on narrow phones so labels never run into the chevron */
+  font-size: clamp(28px, 10vw, 36px);
   line-height: 1.1;
   color: var(--forest);
 }
 
-.drawerLinkActive {
-  color: var(--tan);
+/* current page: a tan rhombus after the label, centred on the text */
+.drawerLink[aria-current]::after {
+  content: '';
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  background: var(--tan);
+  /* the line box carries descender space, so lift it onto the middle of the capitals */
+  transform: translateY(-0.1em) rotate(45deg);
 }
 
 .expandBtn {
@@ -236,15 +243,10 @@
   color: var(--forest);
   cursor: pointer;
   padding: 0;
-  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, opacity 0.2s ease;
-}
-
-.expandBtn:hover {
-  color: var(--tan);
 }
 
 .expandBtn svg {
-  transition: transform 0.25s ease;
+  transition: transform 0.2s ease;
 }
 
 .expandBtnOpen svg {
@@ -267,8 +269,8 @@
   flex-direction: column;
 }
 
-.subLinksInner > :last-child {
-  margin-bottom: 14px;
+.subLinksInner > :first-child {
+  margin-top: 8px;
 }
 
 .subLink {
@@ -277,21 +279,18 @@
   min-height: 44px;
   padding-left: 16px;
   border-left: 2px solid var(--line);
-  font-size: 13px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--body-text);
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--forest);
 }
 
-.subLinkActive {
+.subLink[aria-current='page'] {
   border-left-color: var(--tan);
-  color: var(--forest);
 }
 
 .drawerFooter {
   margin-top: auto;
-  padding: 32px 24px 28px;
+  padding: 32px 24px 16px;
 }
 
 .drawerContact {
@@ -315,47 +314,64 @@
   color: #0F1F19;
 }
 
-.prefs {
-  margin-top: 24px;
-  border-top: 1px solid var(--line);
-}
-
-.prefRow {
+.drawerMeta {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 52px;
-  border-bottom: 1px solid var(--line);
+  margin-top: 24px;
+  padding-top: 8px;
+  border-top: 1px solid var(--line);
 }
 
-.prefLabel {
-  font-size: 11px;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: var(--taupe);
+.social,
+.prefs {
+  display: flex;
+  align-items: center;
+}
+
+.social {
+  margin-left: -12px;
+}
+
+.iconLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--forest);
 }
 
 .prefToggle {
   width: 44px;
   height: 44px;
+}
+
+/* the language toggle in the drawer: 44px tap targets, inactive option in muted grey */
+.drawerLang {
+  gap: 0;
   margin-right: -12px;
 }
 
-.drawerMeta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px 20px;
-  margin-top: 20px;
-  font-size: 12px;
-  color: var(--taupe);
+.drawerLang svg {
+  margin-right: 2px;
 }
 
-.metaLink {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  min-height: 32px;
+.drawerLang button {
+  min-width: 44px;
+  min-height: 44px;
+  font-size: 13px;
+  opacity: 1;
+  color: var(--muted);
+}
+
+.drawerLang button[aria-pressed='true'] {
+  color: var(--forest);
+}
+
+.drawerLang span {
+  color: var(--muted);
+  opacity: 1;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -373,6 +389,23 @@
   .drawer:not(.drawerOpen) {
     display: none;
   }
+}
+
+/* narrow phones: the 70% drawer is ~224px, so trim the side padding */
+@media (max-width: 360px) {
+  .drawerHeader { padding-left: 20px; padding-right: 10px; }
+  .drawerNav,
+  .drawerFooter { padding-left: 20px; padding-right: 20px; }
+}
+
+/* short phones (iPhone SE): tighten spacing so the open accordion fits without scrolling */
+@media (max-height: 640px) {
+  .drawerHeader { padding-top: 10px; padding-bottom: 10px; }
+  .drawerNav { gap: 8px; padding-top: 14px; }
+  .subLinksInner > :first-child { margin-top: 2px; }
+  .drawerFooter { padding-top: 16px; padding-bottom: 8px; }
+  .drawerContact { min-height: 48px; }
+  .drawerMeta { margin-top: 12px; padding-top: 4px; }
 }
 
 @media (max-width: 900px) {
@@ -393,11 +426,5 @@
   }
   .logo {
     height: 26px;
-  }
-}
-
-@media (max-width: 420px) {
-  .drawer {
-    width: 100vw;
   }
 }

@@ -4,7 +4,12 @@ export type Theme = 'light' | 'dark';
 
 const STORAGE_KEY = 'skevos-theme';
 
+// Dark theme is turned off for now: the site always uses the light theme and the toggles are hidden.
+// Set this back to true to restore the toggle (and the matching flag in index.html).
+export const THEME_SWITCHING_ENABLED = false;
+
 function loadInitialTheme(): Theme {
+  if (!THEME_SWITCHING_ENABLED) return 'light';
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
     if (stored === 'light' || stored === 'dark') return stored;

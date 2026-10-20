@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Home",
     "products": "Products",
+    "materials": "Materials",
     "about": "About",
     "contact": "Contact",
     "menu": "Menu",
@@ -13,7 +14,8 @@
     "language": "Language",
     "theme": "Theme",
     "showCategories": "Show categories",
-    "allProducts": "All products"
+    "allProducts": "All products",
+    "emailLabel": "Email {{email}}"
   },
   "footer": {
     "copyright": "© Skevos. Elegant marble utensils, made in Greece.",
@@ -54,6 +56,11 @@
     "finishCount_other": "{{count}} finishes",
     "pieceCount_one": "{{count}} piece",
     "pieceCount_other": "{{count}} pieces"
+  },
+  "materials": {
+    "eyebrow": "Natural stone",
+    "title": "Our Materials",
+    "desc": "Every marble and stone we work with. Each slab is unique, so veining and tone vary from piece to piece."
   },
   "product": {
     "breadcrumbProducts": "Products",

@@ -2,6 +2,7 @@
   "navbar": {
     "home": "Αρχική",
     "products": "Προϊόντα",
+    "materials": "Υλικά",
     "about": "Σχετικά",
     "contact": "Επικοινωνία",
     "menu": "Μενού",
@@ -13,7 +14,8 @@
     "language": "Γλώσσα",
     "theme": "Θέμα",
     "showCategories": "Εμφάνιση κατηγοριών",
-    "allProducts": "Όλα τα προϊόντα"
+    "allProducts": "Όλα τα προϊόντα",
+    "emailLabel": "Email {{email}}"
   },
   "footer": {
     "copyright": "© Skevos. Κομψά μαρμάρινα σκεύη, φτιαγμένα στην Ελλάδα.",
@@ -54,6 +56,11 @@
     "finishCount_other": "{{count}} φινιρίσματα",
     "pieceCount_one": "{{count}} κομμάτι",
     "pieceCount_other": "{{count}} κομμάτια"
+  },
+  "materials": {
+    "eyebrow": "Φυσική πέτρα",
+    "title": "Τα Υλικά μας",
+    "desc": "Όλα τα μάρμαρα και οι πέτρες με τις οποίες δουλεύουμε. Κάθε πλάκα είναι μοναδική, γι' αυτό τα νερά και ο τόνος διαφέρουν από κομμάτι σε κομμάτι."
   },
   "product": {
     "breadcrumbProducts": "Προϊόντα",
