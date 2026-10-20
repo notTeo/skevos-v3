@@ -8,6 +8,7 @@ import CartButton from './CartButton';
 import { THEME_SWITCHING_ENABLED } from '../context/ThemeContext';
 import { CATEGORIES } from '../data/products';
 import styles from './Navbar.module.css';
+import { lockScroll } from '../lib/scrollLock';
 
 const LOGO_SRC = '/assets/logo/skevos-wordmark.png';
 
@@ -52,10 +53,7 @@ export default function Navbar() {
   }, [pathname]);
 
   useEffect(() => {
-    document.body.style.overflow = open ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
-    };
+    if (open) return lockScroll();
   }, [open]);
 
   useEffect(() => {

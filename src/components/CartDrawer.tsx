@@ -6,6 +6,7 @@ import { useCart } from '../context/CartContext';
 import { getProduct } from '../data/products';
 import QuoteRequestForm from './QuoteRequestForm';
 import styles from './CartDrawer.module.css';
+import { lockScroll } from '../lib/scrollLock';
 
 export default function CartDrawer() {
   const { t } = useTranslation();
@@ -22,10 +23,7 @@ export default function CartDrawer() {
   }, [isDrawerOpen]);
 
   useEffect(() => {
-    document.body.style.overflow = isDrawerOpen ? 'hidden' : '';
-    return () => {
-      document.body.style.overflow = '';
-    };
+    if (isDrawerOpen) return lockScroll();
   }, [isDrawerOpen]);
 
   useEffect(() => {
