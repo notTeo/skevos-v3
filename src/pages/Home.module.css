@@ -54,7 +54,7 @@
 .hero {
   display: flex;
   justify-content: center;
-  min-height: min(640px, 100svh);
+  min-height: 100svh;
   /* a faint neutral shade behind the text only, so the photo keeps its own colours */
   background:
     radial-gradient(ellipse 50% 55% at 50% 50%, rgba(0, 0, 0, 0.28), transparent),
@@ -318,7 +318,6 @@
 }
 
 @media (max-width: 900px) {
-  .hero { min-height: 0; }
   .heroText { padding: 56px 40px; }
   .heroTitle { font-size: 48px; }
   .section { padding: 64px 40px 0; }
@@ -332,7 +331,7 @@
      photo keeps its warm light; the photo is framed on the right-hand stones so the
      text sits on the wall */
   .hero {
-    min-height: 88svh;
+    min-height: 90svh;
     justify-content: flex-start;
     align-items: flex-end;
     background:
