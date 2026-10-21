@@ -1,9 +1,9 @@
 import { useEffect } from 'react';
-import { Link, useLocation, useSearchParams } from 'react-router-dom';
+import { useLocation, useSearchParams } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import {
-  MATERIALS, TONES, categoriesForMaterial, materialTone, swatchBackground, type Tone,
+  MATERIALS, TONES, materialTone, swatchBackground, type Tone,
 } from '../data/products';
 import styles from './Materials.module.css';
 
@@ -67,13 +67,6 @@ export default function Materials() {
                   <div className={styles.body}>
                     <h3 className={styles.name}>{name}</h3>
                     <p className={styles.info}>{t(`catalog.finishInfo.${finish.id}`)}</p>
-                    <div className={styles.shop}>
-                      {categoriesForMaterial(finish.id).map((c) => (
-                        <Link key={c.id} to={`/products/${c.id}?finish=${finish.id}`} className={styles.shopLink}>
-                          {t(`products.categories.${c.id}`, { defaultValue: c.name })} →
-                        </Link>
-                      ))}
-                    </div>
                   </div>
                 </article>
               );
