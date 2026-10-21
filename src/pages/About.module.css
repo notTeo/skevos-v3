@@ -8,9 +8,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 200%;
-  height: 200%;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  /* keep the hands and bowl in frame */
+  object-position: 45% 60%;
 }
 
 .heroOverlay {
