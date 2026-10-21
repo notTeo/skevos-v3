@@ -117,104 +117,106 @@ export default function Navbar() {
         </button>
       </div>
 
-      <div
-        className={open ? `${styles.backdrop} ${styles.backdropOpen}` : styles.backdrop}
-        onClick={close}
-        aria-hidden="true"
-      />
+      <div className={styles.layer}>
+        <div
+          className={open ? `${styles.backdrop} ${styles.backdropOpen}` : styles.backdrop}
+          onClick={close}
+          aria-hidden="true"
+        />
 
-      <div
-        id="mobile-drawer"
-        className={open ? `${styles.drawer} ${styles.drawerOpen}` : styles.drawer}
-        role="dialog"
-        aria-modal="true"
-        aria-label={t('navbar.menu')}
-        inert={!open}
-      >
-        <div className={styles.drawerHeader}>
-          <Link to="/" className={styles.logoLink} aria-label="Skevos" onClick={close}>
-            <img src={LOGO_SRC} alt="Skevos" className={styles.drawerLogo} />
-          </Link>
-          <button
-            ref={closeRef}
-            type="button"
-            className={styles.closeBtn}
-            aria-label={t('navbar.closeMenu')}
-            onClick={close}
-          >
-            <X size={22} strokeWidth={1.75} />
-          </button>
-        </div>
-
-        <nav className={styles.drawerNav}>
-          <div className={styles.drawerItem} style={stagger(0)}>
-            <div className={styles.drawerRow}>
-              <Link
-                to="/products"
-                className={styles.drawerLink}
-                aria-current={productsActive ? 'true' : undefined}
-                onClick={close}
-              >
-                {t('navbar.products')}
-              </Link>
-              <button
-                type="button"
-                className={showCategories ? `${styles.expandBtn} ${styles.expandBtnOpen}` : styles.expandBtn}
-                aria-label={t('navbar.showCategories')}
-                aria-expanded={showCategories}
-                aria-controls="drawer-categories"
-                onClick={() => setShowCategories((v) => !v)}
-              >
-                <ChevronDown size={22} strokeWidth={1.75} />
-              </button>
-            </div>
-            <div
-              id="drawer-categories"
-              className={showCategories ? `${styles.subLinks} ${styles.subLinksOpen}` : styles.subLinks}
-              inert={!showCategories}
+        <div
+          id="mobile-drawer"
+          className={open ? `${styles.drawer} ${styles.drawerOpen}` : styles.drawer}
+          role="dialog"
+          aria-modal="true"
+          aria-label={t('navbar.menu')}
+          inert={!open}
+        >
+          <div className={styles.drawerHeader}>
+            <Link to="/" className={styles.logoLink} aria-label="Skevos" onClick={close}>
+              <img src={LOGO_SRC} alt="Skevos" className={styles.drawerLogo} />
+            </Link>
+            <button
+              ref={closeRef}
+              type="button"
+              className={styles.closeBtn}
+              aria-label={t('navbar.closeMenu')}
+              onClick={close}
             >
-              <div className={styles.subLinksInner}>
-                <NavLink to="/products" end className={styles.subLink} onClick={close}>
-                  {sentenceCase(t('navbar.allProducts'))}
-                </NavLink>
-                {CATEGORIES.map((category) => (
-                  <NavLink key={category.id} to={`/products/${category.id}`} className={styles.subLink} onClick={close}>
-                    {sentenceCase(t(`products.categories.${category.id}`, { defaultValue: category.name }))}
+              <X size={22} strokeWidth={1.75} />
+            </button>
+          </div>
+
+          <nav className={styles.drawerNav}>
+            <div className={styles.drawerItem} style={stagger(0)}>
+              <div className={styles.drawerRow}>
+                <Link
+                  to="/products"
+                  className={styles.drawerLink}
+                  aria-current={productsActive ? 'true' : undefined}
+                  onClick={close}
+                >
+                  {t('navbar.products')}
+                </Link>
+                <button
+                  type="button"
+                  className={showCategories ? `${styles.expandBtn} ${styles.expandBtnOpen}` : styles.expandBtn}
+                  aria-label={t('navbar.showCategories')}
+                  aria-expanded={showCategories}
+                  aria-controls="drawer-categories"
+                  onClick={() => setShowCategories((v) => !v)}
+                >
+                  <ChevronDown size={22} strokeWidth={1.75} />
+                </button>
+              </div>
+              <div
+                id="drawer-categories"
+                className={showCategories ? `${styles.subLinks} ${styles.subLinksOpen}` : styles.subLinks}
+                inert={!showCategories}
+              >
+                <div className={styles.subLinksInner}>
+                  <NavLink to="/products" end className={styles.subLink} onClick={close}>
+                    {sentenceCase(t('navbar.allProducts'))}
                   </NavLink>
-                ))}
+                  {CATEGORIES.map((category) => (
+                    <NavLink key={category.id} to={`/products/${category.id}`} className={styles.subLink} onClick={close}>
+                      {sentenceCase(t(`products.categories.${category.id}`, { defaultValue: category.name }))}
+                    </NavLink>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
-          <div className={styles.drawerItem} style={stagger(1)}>
-            <NavLink to="/materials" className={styles.drawerLink} onClick={close}>{t('navbar.materials')}</NavLink>
-          </div>
-          <div className={styles.drawerItem} style={stagger(2)}>
-            <NavLink to="/about" className={styles.drawerLink} onClick={close}>{t('navbar.about')}</NavLink>
-          </div>
-        </nav>
-
-        <div className={styles.drawerFooter} style={stagger(3)}>
-          <NavLink to="/contact" className={styles.drawerContact} onClick={close}>
-            {t('navbar.contact')}
-            <ArrowRight size={16} strokeWidth={2} />
-          </NavLink>
-
-          <div className={styles.drawerMeta}>
-            <div className={styles.social}>
-              <a href="#" className={styles.iconLink} aria-label={t('footer.instagram')}>
-                <Camera size={20} strokeWidth={1.75} aria-hidden="true" />
-              </a>
-              <a
-                href={`mailto:${t('contact.panelEmailValue')}`}
-                className={styles.iconLink}
-                aria-label={t('navbar.emailLabel', { email: t('contact.panelEmailValue') })}
-              >
-                <Mail size={20} strokeWidth={1.75} aria-hidden="true" />
-              </a>
+            <div className={styles.drawerItem} style={stagger(1)}>
+              <NavLink to="/materials" className={styles.drawerLink} onClick={close}>{t('navbar.materials')}</NavLink>
             </div>
-            <div className={styles.prefs}>
-              {THEME_SWITCHING_ENABLED && <ThemeToggle className={styles.prefToggle} />}
-              <LanguageToggle className={styles.drawerLang} />
+            <div className={styles.drawerItem} style={stagger(2)}>
+              <NavLink to="/about" className={styles.drawerLink} onClick={close}>{t('navbar.about')}</NavLink>
+            </div>
+          </nav>
+
+          <div className={styles.drawerFooter} style={stagger(3)}>
+            <NavLink to="/contact" className={styles.drawerContact} onClick={close}>
+              {t('navbar.contact')}
+              <ArrowRight size={16} strokeWidth={2} />
+            </NavLink>
+
+            <div className={styles.drawerMeta}>
+              <div className={styles.social}>
+                <a href="#" className={styles.iconLink} aria-label={t('footer.instagram')}>
+                  <Camera size={20} strokeWidth={1.75} aria-hidden="true" />
+                </a>
+                <a
+                  href={`mailto:${t('contact.panelEmailValue')}`}
+                  className={styles.iconLink}
+                  aria-label={t('navbar.emailLabel', { email: t('contact.panelEmailValue') })}
+                >
+                  <Mail size={20} strokeWidth={1.75} aria-hidden="true" />
+                </a>
+              </div>
+              <div className={styles.prefs}>
+                {THEME_SWITCHING_ENABLED && <ThemeToggle className={styles.prefToggle} />}
+                <LanguageToggle className={styles.drawerLang} />
+              </div>
             </div>
           </div>
         </div>
