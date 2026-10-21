@@ -68,9 +68,10 @@
   box-sizing: border-box;
 }
 
+/* no min-height: 100vh here: in Chrome on iPhone it left the page stuck one toolbar
+   height (113px) short of the top after scrolling down and back up */
 html, body, #root {
   margin: 0;
-  min-height: 100vh;
 }
 
 body {

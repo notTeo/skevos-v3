@@ -77,7 +77,9 @@ export default function Navbar() {
 
   useEffect(() => {
     if (open) {
-      closeRef.current?.focus();
+      // preventScroll: the drawer still sits off-screen as it starts sliding in, and a plain
+      // focus() scrolls the clipping layer sideways to it, so it jumped instead of sliding
+      closeRef.current?.focus({ preventScroll: true });
     } else if (wasOpen.current) {
       burgerRef.current?.focus();
     }

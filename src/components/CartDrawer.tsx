@@ -18,7 +18,8 @@ export default function CartDrawer() {
   useEffect(() => {
     if (isDrawerOpen) {
       setView('cart');
-      closeRef.current?.focus();
+      // preventScroll: see the same call in Navbar.tsx
+      closeRef.current?.focus({ preventScroll: true });
     }
   }, [isDrawerOpen]);
 
