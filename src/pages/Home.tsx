@@ -126,6 +126,7 @@ export default function Home() {
             {t('home.heroTitleLine1')}<br />{t('home.heroTitleLine2')}<br />{t('home.heroTitleLine3')}
           </h1>
           <p className={styles.heroDesc}>{t('home.heroDesc')}</p>
+          <p className={styles.heroDescShort}>{t('home.heroDescShort')}</p>
           <div className={styles.heroActions}>
             <Link to="/products" className={styles.primaryBtn}>{t('home.shopCollection')}</Link>
             <Link to="/contact" className={styles.textLink}>{t('home.requestPricing')} →</Link>
