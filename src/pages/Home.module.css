@@ -68,10 +68,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  /* the block sits in the middle of the hero, the lines inside it start flush left */
+  align-items: flex-start;
   max-width: 640px;
   padding: 80px 24px;
-  text-align: center;
+  text-align: left;
   text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
 }
 
@@ -88,8 +89,8 @@
   font-size: 17px;
   line-height: 1.7;
   color: #EAE1D2;
-  max-width: 440px;
-  margin: 0 auto 36px;
+  max-width: 400px;
+  margin: 0 0 40px;
 }
 
 /* phones get one short line instead of the full description */
@@ -111,7 +112,7 @@
 .heroActions {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 28px;
   flex-wrap: wrap;
 }
@@ -343,8 +344,6 @@
       var(--band);
   }
   .heroText {
-    align-items: flex-start;
-    text-align: left;
     /* a fixed gap under the nav, so on short screens (browser bars showing) the
        hero grows instead of the text climbing up against the logo */
     padding: 40px 24px calc(var(--screen-h, 100svh) * 0.18);
@@ -360,7 +359,7 @@
     max-width: 280px;
     margin: 0 0 26px;
   }
-  .heroActions { justify-content: flex-start; gap: 22px; }
+  .heroActions { gap: 22px; }
   .heroActions .primaryBtn { padding: 13px 20px; font-size: 12px; letter-spacing: 1.2px; }
   .heroActions .textLink { font-size: 12px; }
   .section { padding: 48px 20px 0; }
