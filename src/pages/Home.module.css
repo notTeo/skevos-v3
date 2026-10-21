@@ -328,18 +328,24 @@
 }
 
 @media (max-width: 600px) {
-  /* text sits low over a dark fade, so the top half of the screen is all photo;
-     the photo is shifted to keep the left group of stones in frame */
+  /* left-aligned text in the lower middle, over a light shade from the left so the
+     photo keeps its warm light; the photo is framed on the right-hand stones so the
+     text sits on the wall */
   .hero {
     min-height: 88svh;
+    justify-content: flex-start;
     align-items: flex-end;
     background:
-      linear-gradient(to top, rgba(12, 14, 10, 0.82) 0%, rgba(12, 14, 10, 0.5) 38%, transparent 62%),
-      url('/assets/hero/hero-stones.webp') 14% center / cover no-repeat,
+      linear-gradient(to right, rgba(12, 14, 10, 0.58), rgba(12, 14, 10, 0.12) 80%),
+      url('/assets/hero/hero-stones.webp') 100% center / cover no-repeat,
       var(--band);
   }
-  .heroText { width: 100%; padding: 0 20px 36px; }
-  .eyebrow { font-size: 11px; letter-spacing: 2px; margin-bottom: 14px; }
+  .heroText {
+    align-items: flex-start;
+    text-align: left;
+    padding: 0 24px 18svh;
+  }
+  .eyebrow { font-size: 11px; letter-spacing: 2px; margin-bottom: 14px; color: #E6D3AE; }
   .heroTitle { font-size: 38px; margin-bottom: 14px; }
   .heroDesc { display: none; }
   .heroDescShort {
@@ -347,10 +353,12 @@
     font-size: 16px;
     line-height: 1.5;
     color: #EAE1D2;
-    margin: 0 0 28px;
+    max-width: 280px;
+    margin: 0 0 26px;
   }
-  .heroActions { flex-direction: column; gap: 20px; width: 100%; }
-  .heroActions .primaryBtn { width: 100%; padding: 18px 24px; text-align: center; }
+  .heroActions { justify-content: flex-start; gap: 22px; }
+  .heroActions .primaryBtn { padding: 13px 20px; font-size: 12px; letter-spacing: 1.2px; }
+  .heroActions .textLink { font-size: 12px; }
   .section { padding: 48px 20px 0; }
   .sectionHead { flex-direction: column; align-items: flex-start; gap: 14px; }
   .sectionTitle { font-size: 26px; }
