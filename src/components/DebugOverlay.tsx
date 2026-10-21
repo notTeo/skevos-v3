@@ -5,6 +5,27 @@ import { useEffect, useState } from 'react';
 // ?debug=off turns it off. Remove once the bug is understood.
 const KEY = 'skevos-debug';
 
+// ?debug&off=sticky,vh,layers switches suspects off one at a time (kept for the tab, ?off= clears)
+const SUSPECTS: Record<string, string> = {
+  // the nav scrolls away with the page instead of sticking, and stops overlapping the hero
+  sticky: '[class^="_nav_"] { position: relative !important; margin-bottom: 0 !important; }',
+  // html, body and #root lose their min-height: 100vh
+  vh: 'html, body, #root { min-height: 0 !important; }',
+  // the fixed, screen-sized menu and cart layers are removed
+  layers: '[class*="_layer_"] { display: none !important; }',
+};
+const OFF_KEY = 'skevos-debug-off';
+
+function suspectsOff() {
+  try {
+    const q = new URLSearchParams(window.location.search).get('off');
+    if (q !== null) sessionStorage.setItem(OFF_KEY, q);
+    return (sessionStorage.getItem(OFF_KEY) ?? '').split(',').filter((k) => k in SUSPECTS);
+  } catch {
+    return [];
+  }
+}
+
 function enabled() {
   try {
     const q = new URLSearchParams(window.location.search).get('debug');
@@ -21,6 +42,15 @@ const r = (n: number | undefined) => (n === undefined ? '-' : Math.round(n * 10)
 export default function DebugOverlay() {
   const [on] = useState(enabled);
   const [lines, setLines] = useState<string[]>([]);
+  const [off] = useState(() => (on ? suspectsOff() : []));
+
+  useEffect(() => {
+    if (!off.length) return;
+    const style = document.createElement('style');
+    style.textContent = off.map((k) => SUSPECTS[k]).join('\n');
+    document.head.appendChild(style);
+    return () => style.remove();
+  }, [off]);
 
   useEffect(() => {
     if (!on) return;
@@ -107,7 +137,7 @@ export default function DebugOverlay() {
         whiteSpace: 'pre',
       }}
     >
-      {`${navigator.userAgent.includes('CriOS') ? 'Chrome iOS' : 'other'}\n${lines.join('\n')}`}
+      {`${navigator.userAgent.includes('CriOS') ? 'Chrome iOS' : 'other'}  off: ${off.join(',') || 'none'}\n${lines.join('\n')}`}
     </pre>
   );
 }
