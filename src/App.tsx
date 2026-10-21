@@ -3,7 +3,6 @@ import Navbar from './components/Navbar';
 import CartDrawer from './components/CartDrawer';
 import LanguageSync from './i18n/LanguageSync';
 import ScrollToTop from './components/ScrollToTop';
-import DebugOverlay from './components/DebugOverlay';
 import Home from './pages/Home';
 import Products from './pages/Products';
 import Category from './pages/Category';
@@ -28,7 +27,6 @@ export default function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <CartDrawer />
-      <DebugOverlay />
     </div>
   );
 }
