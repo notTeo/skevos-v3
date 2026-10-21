@@ -342,7 +342,9 @@
   .heroText {
     align-items: flex-start;
     text-align: left;
-    padding: 0 24px 18svh;
+    /* a fixed gap under the nav, so on short screens (browser bars showing) the
+       hero grows instead of the text climbing up against the logo */
+    padding: 40px 24px 18svh;
   }
   .eyebrow { font-size: 11px; letter-spacing: 2px; margin-bottom: 14px; color: #E6D3AE; }
   .heroTitle { font-size: 38px; margin-bottom: 14px; }
@@ -368,4 +370,9 @@
   .gridFinish { font-size: 13px; }
   .strip { margin: 0 -20px; }
   .stripItem { width: 96px; margin-right: 14px; }
+}
+
+/* short phone screens: less space below the text so it doesn't crowd the nav */
+@media (max-width: 600px) and (max-height: 720px) {
+  .heroText { padding-bottom: 10svh; }
 }
