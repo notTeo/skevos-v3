@@ -181,6 +181,8 @@
 }
 
 .categoryCard img {
+  /* favour the lower part of the scene, where the pieces sit */
+  object-position: center 75%;
   transition: transform 0.6s ease;
 }
 
