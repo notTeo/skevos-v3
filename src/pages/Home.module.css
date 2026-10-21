@@ -54,7 +54,8 @@
 .hero {
   display: flex;
   justify-content: center;
-  min-height: 100svh;
+  /* --screen-h is the screen height measured once (see lib/screenHeight.ts) */
+  min-height: var(--screen-h, 100svh);
   /* a faint neutral shade behind the text only, so the photo keeps its own colours */
   background:
     radial-gradient(ellipse 50% 55% at 50% 50%, rgba(0, 0, 0, 0.28), transparent),
@@ -333,7 +334,7 @@
      photo keeps its warm light; the photo is framed on the right-hand stones so the
      text sits on the wall */
   .hero {
-    min-height: 90svh;
+    min-height: calc(var(--screen-h, 100svh) * 0.9);
     justify-content: flex-start;
     align-items: flex-end;
     background:
@@ -346,7 +347,7 @@
     text-align: left;
     /* a fixed gap under the nav, so on short screens (browser bars showing) the
        hero grows instead of the text climbing up against the logo */
-    padding: 40px 24px 18svh;
+    padding: 40px 24px calc(var(--screen-h, 100svh) * 0.18);
   }
   .eyebrow { font-size: 11px; letter-spacing: 2px; margin-bottom: 14px; color: #E6D3AE; }
   .heroTitle { font-size: 38px; margin-bottom: 14px; }
@@ -375,6 +376,6 @@
 }
 
 /* short phone screens: less space below the text so it doesn't crowd the nav */
-@media (max-width: 600px) and (max-height: 720px) {
-  .heroText { padding-bottom: 10svh; }
+@media (max-width: 600px) {
+  :global(.short-screen) .heroText { padding-bottom: calc(var(--screen-h, 100svh) * 0.1); }
 }

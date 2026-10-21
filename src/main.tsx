@@ -6,6 +6,9 @@ import './styles/global.css'
 import App from './App.tsx'
 import { CartProvider } from './context/CartContext'
 import { ThemeProvider } from './context/ThemeContext'
+import { trackScreenHeight } from './lib/screenHeight'
+
+trackScreenHeight()
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
