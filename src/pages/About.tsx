@@ -20,7 +20,7 @@ export default function About() {
 
   return (
     <div>
-      <div className={styles.hero}>
+      <div className={styles.hero} data-nav-hero>
         <img src="/assets/products/spoon-rest/spoon-travertino-choco-angle.webp" className={styles.heroImg} alt="" />
         <div className={styles.heroOverlay}>
           <div className={styles.heroTitle}>{t('about.heroTitle')}</div>

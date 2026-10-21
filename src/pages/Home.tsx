@@ -119,7 +119,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className={styles.hero}>
+      <section className={styles.hero} data-nav-hero>
         <div className={styles.heroText}>
           <div className={styles.eyebrow}>{t('home.eyebrow')}</div>
           <h1 className={styles.heroTitle}>

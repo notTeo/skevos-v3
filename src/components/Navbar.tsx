@@ -26,6 +26,7 @@ export default function Navbar() {
   const burgerRef = useRef<HTMLButtonElement>(null);
   const closeRef = useRef<HTMLButtonElement>(null);
   const wasOpen = useRef(false);
+  const navRef = useRef<HTMLDivElement>(null);
 
   const linkClass = ({ isActive }: { isActive: boolean }) =>
     isActive ? `${styles.link} ${styles.linkActive}` : styles.link;
@@ -41,12 +42,21 @@ export default function Navbar() {
     .filter(Boolean)
     .join(' ');
 
+  // on hero pages the bar stays clear until the hero has scrolled up past it
   useEffect(() => {
-    const onScroll = () => setAtTop(window.scrollY < 8);
+    const onScroll = () => {
+      const hero = hasHero ? document.querySelector('[data-nav-hero]') : null;
+      const navH = navRef.current?.offsetHeight ?? 0;
+      setAtTop(hero ? hero.getBoundingClientRect().bottom > navH : window.scrollY < 8);
+    };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
-  }, [pathname]);
+    window.addEventListener('resize', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
+  }, [pathname, hasHero]);
 
   useEffect(() => {
     setOpen(false);
@@ -75,7 +85,7 @@ export default function Navbar() {
   }, [open]);
 
   return (
-    <div className={navClass}>
+    <div className={navClass} ref={navRef}>
       <Link to="/" className={styles.logoLink} aria-label="Skevos">
         <img src={LOGO_SRC} alt="Skevos" className={styles.logo} />
       </Link>
