@@ -3,17 +3,17 @@
     {
       "id": "home-objects",
       "name": "Home Objects",
-      "image": "/assets/products-3x2/candlestick-cylinder/candlestick-cylinder-green.webp"
+      "image": "/assets/categories/category-home-objects.webp"
     },
     {
       "id": "tableware",
       "name": "Tableware",
-      "image": "/assets/products-3x2/spoon-rest/spoon-travertino-classic-angle.webp"
+      "image": "/assets/categories/category-tableware.webp"
     },
     {
       "id": "furniture",
       "name": "Furniture",
-      "image": null
+      "image": "/assets/categories/category-furniture.webp"
     }
   ],
   "products": [
