@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Footer from '../components/Footer';
 import styles from './About.module.css';
@@ -8,13 +9,6 @@ const STEPS = [
   { num: '03', key: 'polished' },
 ];
 
-const GALLERY = [
-  '/assets/products/spoon-rest/spoon-nero-greco-angle.webp',
-  '/assets/products/spoon-rest/spoon-rodiths-angle.webp',
-  '/assets/products/spoon-rest/spoon-maroko-sand-angle.webp',
-  '/assets/products/spoon-rest/spoon-foume-angle.webp',
-];
-
 export default function About() {
   const { t } = useTranslation();
 
@@ -23,36 +17,33 @@ export default function About() {
       <div className={styles.hero} data-nav-hero>
         <img src="/assets/about/about-workshop.webp" className={styles.heroImg} alt="" />
         <div className={styles.heroOverlay}>
-          <div className={styles.heroTitle}>{t('about.heroTitle')}</div>
+          <h1 className={styles.heroTitle}>{t('about.heroTitle')}</h1>
         </div>
       </div>
 
-      <div className={styles.body}>
+      <section className={styles.body}>
         <div className={styles.bodyEyebrow}>{t('about.bodyEyebrow')}</div>
-        <div className={styles.bodyText}>{t('about.bodyText1')}</div>
-        <div className={styles.bodyText}>{t('about.bodyText2')}</div>
-        <div className={styles.bodyTextLast}>{t('about.bodyText3')}</div>
-      </div>
+        <p className={styles.bodyText}>{t('about.bodyText1')}</p>
+        <p className={styles.bodyText}>{t('about.bodyText2')}</p>
+        <p className={styles.bodyText}>{t('about.bodyText3')}</p>
+      </section>
 
-      <div className={styles.process}>
-        <div className={styles.processTitle}>{t('about.processTitle')}</div>
-        <div className={styles.steps}>
+      <section className={styles.process}>
+        <h2 className={styles.processTitle}>{t('about.processTitle')}</h2>
+        <ol className={styles.steps}>
           {STEPS.map((s) => (
-            <div key={s.num} className={styles.step}>
-              <div className={styles.stepNum}>{s.num}</div>
-              <div className={styles.stepTitle}>{t(`about.steps.${s.key}.title`)}</div>
-              <div className={styles.stepDesc}>{t(`about.steps.${s.key}.desc`)}</div>
-            </div>
+            <li key={s.num} className={styles.step}>
+              <div className={styles.stepNum} aria-hidden="true">{s.num}</div>
+              <h3 className={styles.stepTitle}>{t(`about.steps.${s.key}.title`)}</h3>
+              <p className={styles.stepDesc}>{t(`about.steps.${s.key}.desc`)}</p>
+            </li>
           ))}
-        </div>
-      </div>
+        </ol>
+      </section>
 
-      <div className={styles.gallery}>
-        {GALLERY.map((src) => (
-          <div key={src} className={styles.galleryItem}>
-            <img src={src} className={styles.galleryImg} alt="" />
-          </div>
-        ))}
+      <div className={styles.cta}>
+        <Link to="/products" className={styles.primaryBtn}>{t('home.shopCollection')}</Link>
+        <Link to="/contact" className={styles.textLink}>{t('home.requestPricing')} →</Link>
       </div>
 
       <Footer />

@@ -25,15 +25,17 @@
 }
 
 .heroTitle {
+  margin: 0;
   font-family: 'Elsie Black', serif;
   font-size: 52px;
+  font-weight: 900;
   color: var(--band-text);
 }
 
 .body {
   max-width: 720px;
   margin: 0 auto;
-  padding: 80px 24px;
+  padding: 88px 24px 96px;
 }
 
 .bodyEyebrow {
@@ -47,29 +49,28 @@
 }
 
 .bodyText {
+  margin: 0 0 24px;
   font-size: 17px;
   line-height: 1.85;
-  color: var(--ink);
-  margin-bottom: 24px;
+  color: var(--body-text);
 }
 
-.bodyTextLast {
-  font-size: 17px;
-  line-height: 1.85;
-  color: var(--ink);
+.bodyText:last-child {
+  margin-bottom: 0;
 }
 
 .process {
   background: var(--band);
-  padding: 90px 72px;
+  padding: 96px 72px;
 }
 
 .processTitle {
+  margin: 0 0 64px;
   text-align: center;
   font-family: 'Elsie Black', serif;
   font-size: 32px;
+  font-weight: 900;
   color: var(--band-text);
-  margin-bottom: 56px;
 }
 
 .steps {
@@ -78,73 +79,111 @@
   gap: 48px;
   max-width: 960px;
   margin: 0 auto;
+  padding: 0;
+  list-style: none;
 }
 
 .step {
-  text-align: center;
+  border-top: 1px solid rgba(203, 179, 148, 0.35);
+  padding-top: 28px;
 }
 
 .stepNum {
   font-family: 'Elsie Black', serif;
-  font-size: 44px;
+  font-size: 40px;
+  line-height: 1;
   color: var(--tan);
-  margin-bottom: 14px;
+  margin-bottom: 18px;
 }
 
 .stepTitle {
-  font-size: 15px;
+  margin: 0 0 10px;
+  font-size: 16px;
   font-weight: 700;
   color: var(--band-text);
-  margin-bottom: 10px;
   letter-spacing: 0.5px;
 }
 
 .stepDesc {
-  font-size: 14px;
+  margin: 0;
+  font-size: 15px;
   line-height: 1.7;
   color: var(--sand);
 }
 
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 2px;
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 36px;
+  padding: 88px 24px 32px;
 }
 
-.galleryItem {
-  aspect-ratio: 1;
-  overflow: hidden;
-  position: relative;
+.primaryBtn {
+  display: inline-block;
+  background: var(--tan);
+  color: #0F1F19;
+  padding: 16px 32px;
+  font-size: 13px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: var(--radius);
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-.galleryImg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  object-fit: cover;
+.primaryBtn:hover {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.textLink {
+  color: var(--ink);
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+  border-bottom: 1.5px solid var(--tan);
+  padding-bottom: 4px;
+  transition: color 0.2s ease;
+}
+
+.textLink:hover {
+  color: var(--taupe);
 }
 
 @media (max-width: 900px) {
   .hero { height: 340px; }
   .heroOverlay { padding: 32px 40px; }
   .heroTitle { font-size: 38px; }
-  .body { padding: 56px 24px; }
-  .process { padding: 64px 40px; }
+  .body { padding: 64px 24px 72px; }
+  .process { padding: 72px 40px; }
   .steps { gap: 32px; }
   .stepNum { font-size: 34px; }
-  .gallery { grid-template-columns: repeat(3, 1fr); }
+  .cta { padding-top: 72px; }
 }
 
 @media (max-width: 600px) {
   .hero { height: 280px; }
   .heroOverlay { padding: 24px 20px; }
   .heroTitle { font-size: 28px; }
-  .body { padding: 40px 20px; }
-  .process { padding: 48px 20px; }
-  .processTitle { font-size: 22px; margin-bottom: 36px; }
-  .steps { grid-template-columns: 1fr; gap: 36px; max-width: 100%; }
-  .stepNum { font-size: 28px; }
-  .gallery { grid-template-columns: repeat(2, 1fr); }
+  .body { padding: 48px 20px 56px; }
+  .bodyEyebrow { font-size: 11px; letter-spacing: 2px; }
+  .bodyText { font-size: 16px; line-height: 1.75; }
+  .process { padding: 56px 20px; }
+  .processTitle { font-size: 24px; margin-bottom: 36px; }
+  /* number sits beside the title so the band stays short */
+  .steps { grid-template-columns: 1fr; gap: 28px; }
+  .step {
+    display: grid;
+    grid-template-columns: 52px 1fr;
+    column-gap: 12px;
+    padding-top: 22px;
+  }
+  .stepNum { grid-row: span 2; font-size: 28px; margin-bottom: 0; }
+  .stepTitle { margin-top: 4px; }
+  .cta { flex-direction: column; gap: 24px; padding: 56px 20px 16px; }
 }
