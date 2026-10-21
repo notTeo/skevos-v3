@@ -55,7 +55,11 @@
   display: flex;
   justify-content: center;
   min-height: min(640px, 100svh);
-  background: var(--band);
+  /* a faint neutral shade behind the text only, so the photo keeps its own colours */
+  background:
+    radial-gradient(ellipse 50% 55% at 50% 50%, rgba(0, 0, 0, 0.28), transparent),
+    url('/assets/hero/hero-stones.webp') center / cover no-repeat,
+    var(--band);
   padding-top: var(--nav-h);
 }
 
@@ -67,6 +71,7 @@
   max-width: 640px;
   padding: 80px 24px;
   text-align: center;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.35);
 }
 
 .heroTitle {
@@ -84,6 +89,17 @@
   color: #EAE1D2;
   max-width: 440px;
   margin: 0 auto 36px;
+}
+
+/* green instead of tan, so it doesn't sink into the warm wall of the photo */
+.heroActions .primaryBtn {
+  background: var(--forest);
+  color: var(--band-text);
+  text-shadow: none;
+}
+
+.heroActions .primaryBtn:hover {
+  background: #17362E;
 }
 
 .heroActions {
@@ -307,6 +323,7 @@
 }
 
 @media (max-width: 600px) {
+  .hero { min-height: 80svh; }
   .heroText { padding: 40px 20px 44px; }
   .heroTitle { font-size: 36px; }
   .heroDesc { font-size: 16px; }
